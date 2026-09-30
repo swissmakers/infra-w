@@ -1,0 +1,363 @@
+$columns: minmax(0, 1fr) 96px 104px 136px 32px
+
+.file-list
+  display: flex
+  flex-direction: column
+  overflow-y: auto
+  flex: 1
+  min-height: 0
+  background-color: var(--surface)
+  position: relative
+  user-select: none
+  scrollbar-width: thin
+
+  .file-list-header, .file-item
+    display: grid
+    grid-template-columns: $columns
+    gap: 16px
+    align-items: center
+    padding: 0 16px
+
+  .file-list-header
+    position: sticky
+    top: 0
+    z-index: 10
+    height: 34px
+    flex-shrink: 0
+    background-color: var(--surface)
+    border-bottom: 1px solid var(--border)
+    font-size: 12px
+    font-weight: 500
+    color: var(--subtext)
+
+    .header-size, .header-permissions, .header-date
+      text-align: right
+
+    .sort-button
+      display: inline-flex
+      align-items: center
+      gap: 2px
+      min-width: 0
+      padding: 0
+      border: 0
+      background: none
+      color: inherit
+      font: inherit
+      cursor: pointer
+      &:hover, &.active
+        color: var(--text)
+      svg
+        width: 16px
+        height: 16px
+        flex-shrink: 0
+
+    .header-name.sort-button
+      justify-self: start
+
+    .header-size.sort-button, .header-date.sort-button
+      justify-self: end
+
+  .loading-state, .error-state, .empty-state
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    flex: 1
+    padding: 48px 24px
+    text-align: center
+
+    svg
+      width: 32px
+      height: 32px
+      margin-bottom: 12px
+      color: var(--subtext)
+
+    h3
+      margin: 0 0 6px
+      font-size: 14px
+      font-weight: 500
+      color: var(--text)
+
+    p
+      margin: 0
+      max-width: 36ch
+      font-size: 13px
+      color: var(--subtext)
+      line-height: 1.5
+
+  .loading-spinner
+    width: 24px
+    height: 24px
+    margin-bottom: 12px
+    border: 2px solid var(--border)
+    border-top-color: var(--primary)
+    border-radius: 50%
+    animation: spin 0.8s linear infinite
+
+  .error-state
+    svg, h3
+      color: var(--error)
+
+  .file-items-container
+    display: flex
+    flex-direction: column
+    flex: 1
+    position: relative
+    min-height: 0
+    outline: none
+    padding-bottom: 24px
+
+  .selection-box
+    position: absolute
+    background-color: var(--primary-opacity)
+    border: 1px solid var(--primary)
+    pointer-events: none
+    z-index: 50
+
+  .file-item
+    height: 38px
+    flex-shrink: 0
+    border-bottom: 1px solid var(--border)
+    cursor: pointer
+    position: relative
+
+    &:hover, &.focused, &:focus
+      outline: none
+      background-color: var(--hover)
+
+      .dots-menu
+        opacity: 1
+
+    &:focus-visible
+      box-shadow: inset 2px 0 0 var(--primary)
+
+    &.selected, &.selected:hover
+      background-color: var(--primary-opacity)
+      box-shadow: inset 2px 0 0 var(--primary)
+
+    &.drop-target
+      background-color: var(--primary-opacity)
+      box-shadow: inset 0 0 0 1px var(--primary)
+
+    &.dragging, &.cut
+      opacity: 0.5
+
+    .file-name
+      display: flex
+      align-items: center
+      gap: 10px
+      min-width: 0
+
+      svg
+        width: 18px
+        height: 18px
+        flex-shrink: 0
+
+      h2
+        margin: 0
+        font-size: 14px
+        font-weight: 400
+        color: var(--text)
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
+      .rename-input
+        flex: 1
+        min-width: 0
+        height: 26px
+        padding: 0 8px
+        font: inherit
+        font-size: 14px
+        color: var(--text)
+        background-color: var(--surface)
+        border: 1px solid var(--primary)
+        border-radius: 2px
+        outline: none
+
+      .symlink-badge
+        display: flex
+        align-items: center
+        gap: 3px
+        padding: 0 5px
+        border: 1px solid var(--border-strong)
+        border-radius: 2px
+        font-size: 12px
+        color: var(--subtext)
+        svg
+          width: 11px
+          height: 11px
+
+    .file-size, .file-permissions, .file-date
+      margin: 0
+      font-size: 13px
+      color: var(--subtext)
+      text-align: right
+      white-space: nowrap
+      font-variant-numeric: tabular-nums
+
+    .perms-text
+      font: 12px var(--font-code)
+
+    .dots-menu
+      width: 18px
+      height: 18px
+      padding: 3px
+      box-sizing: content-box
+      display: inline-flex
+      border: 0
+      background: transparent
+      justify-self: center
+      border-radius: 2px
+      color: var(--subtext)
+      opacity: 0
+      cursor: pointer
+
+      svg
+        width: 100%
+        height: 100%
+
+      &:focus-visible
+        opacity: 1
+
+      &:hover
+        color: var(--text)
+        background-color: var(--border)
+
+  &.grid
+    .file-list-header
+      display: none
+
+    .file-items-container
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(128px, 1fr))
+      grid-auto-rows: max-content
+      align-content: start
+      gap: 8px
+      padding: 16px
+
+    .file-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      height: auto
+      padding: 16px 8px 12px
+      border: 1px solid transparent
+      border-radius: 3px
+      text-align: center
+
+      &.selected, &.selected:hover, &.drop-target
+        box-shadow: none
+        border-color: var(--primary)
+
+      .file-name
+        flex-direction: column
+        gap: 8px
+        width: 100%
+
+        svg
+          width: 36px
+          height: 36px
+
+        .file-thumbnail
+          width: 80px
+          height: 80px
+          object-fit: cover
+          border-radius: 2px
+          background-color: var(--hover)
+
+        h2
+          font-size: 13px
+          line-height: 1.3
+          white-space: normal
+          display: -webkit-box
+          -webkit-line-clamp: 2
+          -webkit-box-orient: vertical
+
+        .rename-input
+          width: 100%
+          text-align: center
+
+        .symlink-badge
+          display: none
+
+      .file-size, .file-permissions, .file-date
+        display: none
+
+      .dots-menu
+        position: absolute
+        top: 6px
+        right: 6px
+
+@keyframes spin
+  to
+    transform: rotate(360deg)
+
+.drag-preview
+  position: fixed
+  top: -200px
+  left: -200px
+  display: flex
+  align-items: center
+  padding: 4px
+  pointer-events: none
+
+  .drag-icons
+    position: relative
+    width: 48px
+    height: 48px
+    flex-shrink: 0
+
+  .drag-icon-wrapper
+    position: absolute
+    top: 0
+    left: 0
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: var(--surface)
+    border: 1px solid var(--border-strong)
+    border-radius: 3px
+
+    svg
+      width: 24px
+      height: 24px
+      color: var(--subtext)
+
+  .drag-badge
+    position: absolute
+    top: -4px
+    right: -4px
+    min-width: 16px
+    height: 16px
+    padding: 0 4px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: var(--action)
+    color: var(--action-text)
+    font-size: 12px
+    font-weight: 600
+    border-radius: 2px
+    z-index: 100
+
+  .drag-count
+    display: none
+
+@media (max-width: 768px)
+  .file-list
+    .file-list-header, .file-item
+      grid-template-columns: minmax(0, 1fr) 80px 32px
+      gap: 8px
+      padding: 0 12px
+
+    .header-permissions, .header-date, .file-item .file-permissions, .file-item .file-date
+      display: none
+
+    .file-item .dots-menu
+      opacity: 1
+
+    &.grid .file-items-container
+      grid-template-columns: repeat(auto-fill, minmax(96px, 1fr))

@@ -1,0 +1,318 @@
+.settings-workspace
+  display: flex
+  height: 100%
+  overflow: hidden
+  background: var(--surface)
+
+  .settings-navigation
+    width: 260px
+    flex: 0 0 260px
+    background: var(--background)
+    border-right: 1px solid var(--border)
+    padding: 28px 18px 18px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    overflow-y: auto
+
+  .settings-navigation nav
+    flex: 1
+    a
+      color: var(--subtext)
+      text-decoration: none
+      display: flex
+      align-items: center
+      gap: 11px
+      padding: 8px 12px
+      font-size: 13px
+      border-left: 2px solid transparent
+      &:hover
+        color: var(--text)
+        background: var(--hover)
+      &.active
+        background: var(--hover)
+        color: var(--text)
+        border-left-color: var(--primary)
+        font-weight: 600
+
+  .settings-nav-group
+    margin-top: 22px
+    h2
+      margin: 0 12px 6px
+      font-size: 12px
+      font-weight: 600
+      letter-spacing: 1.25px
+      text-transform: uppercase
+      color: var(--subtext)
+
+  .settings-navigation-footer
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 0 8px
+    padding: 24px 12px 0
+    font-size: 12px
+    color: var(--subtext)
+    white-space: nowrap
+    a
+      padding: 4px 0
+      color: inherit
+      text-decoration: none
+      &:hover
+        color: var(--text)
+
+  .settings-document
+    flex: 1
+    min-width: 0
+
+  .settings-page
+    max-width: 1080px
+
+  .administration-index > section
+    display: grid
+    grid-template-columns: minmax(170px, .8fr) minmax(280px, 1.6fr)
+    gap: 42px
+    padding: 24px 0 32px
+    border-bottom: 1px solid var(--border)
+    &:first-child
+      padding-top: 0
+    &:last-child
+      border-bottom: 0
+
+  .administration-section-title
+    h2
+      font-size: 15px
+      font-weight: 500
+      margin: 0 0 8px
+    p
+      color: var(--subtext)
+      font-size: 13px
+      line-height: 1.7
+      margin: 0
+
+  .administration-links a
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 20px
+    text-decoration: none
+    color: var(--text)
+    padding: 13px 0
+    border-bottom: 1px solid var(--border)
+    &:first-child
+      padding-top: 0
+    &:last-child
+      border-bottom: 0
+    &:hover strong
+      text-decoration: underline
+      text-underline-offset: 4px
+    strong
+      display: block
+      font-size: 14px
+      font-weight: 500
+      margin-bottom: 4px
+    span
+      font-size: 12px
+      color: var(--subtext)
+      line-height: 1.6
+      display: block
+    svg
+      color: var(--subtext)
+      flex-shrink: 0
+
+  @media (max-width: 1100px)
+    .settings-navigation
+      width: 220px
+      flex-basis: 220px
+      padding-inline: 12px
+    .administration-index > section
+      grid-template-columns: 1fr
+      gap: 16px
+
+  @media (max-width: 768px)
+    flex-direction: column
+    .settings-navigation
+      width: 100%
+      flex: 0 0 auto
+      padding: 10px 16px
+      border-right: 0
+      border-bottom: 1px solid var(--border)
+      nav
+        display: flex
+        overflow-x: auto
+        align-items: center
+        gap: 4px
+        > a, .settings-nav-group a
+          white-space: nowrap
+          padding: 8px 10px
+          border-left: 0
+          border-bottom: 2px solid transparent
+          &.active
+            border-bottom-color: var(--primary)
+        .settings-nav-group
+          display: contents
+          h2
+            display: none
+      .settings-navigation-footer
+        display: none
+
+.settings-section
+  padding: 28px 0
+  border-bottom: 1px solid var(--border)
+  &:first-child, .page-header + &
+    padding-top: 0
+  &:last-child
+    border-bottom: 0
+
+  .settings-section-header
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    gap: 24px
+    h2
+      display: flex
+      align-items: center
+      gap: 10px
+      margin: 0
+      font-size: 14px
+      font-weight: 600
+    p
+      margin: 6px 0 0
+      max-width: 620px
+      color: var(--subtext)
+      font-size: 13px
+      line-height: 1.65
+    @media (max-width: 768px)
+      flex-direction: column
+      gap: 12px
+
+  .settings-section-actions
+    display: flex
+    gap: 8px
+    flex-shrink: 0
+    margin-left: auto
+
+  .settings-section-body
+    margin-top: 18px
+
+.settings-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 32px
+  padding: 14px 0
+  border-top: 1px solid var(--border)
+  &:first-child
+    border-top: 0
+    padding-top: 0
+  .settings-row-text
+    min-width: 0
+    label
+      display: block
+      font-size: 14px
+      font-weight: 500
+    p
+      margin: 4px 0 0
+      color: var(--subtext)
+      font-size: 13px
+      line-height: 1.6
+      max-width: 560px
+  .settings-row-control
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    gap: 8px
+    min-width: 0
+    .select-box
+      min-width: 200px
+  @media (max-width: 768px)
+    flex-direction: column
+    align-items: stretch
+    gap: 10px
+
+.settings-status
+  font-size: 12px
+  font-weight: 500
+  padding: 2px 8px
+  border-radius: 2px
+  border: 1px solid currentColor
+  color: var(--subtext)
+  &.positive
+    color: var(--success)
+  &.warning
+    color: var(--warning)
+  &.error
+    color: var(--error)
+
+.settings-list-item
+  display: flex
+  align-items: center
+  gap: 12px
+  padding: 12px 0
+  border-top: 1px solid var(--border)
+  &:first-child
+    border-top: 0
+    padding-top: 0
+  > svg
+    flex-shrink: 0
+    color: var(--subtext)
+  &.muted strong
+    color: var(--subtext)
+  .settings-list-item-text
+    flex: 1
+    min-width: 0
+    strong
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      gap: 4px 10px
+      font-size: 14px
+      font-weight: 500
+      overflow-wrap: anywhere
+    p
+      margin: 3px 0 0
+      color: var(--subtext)
+      font-size: 13px
+      line-height: 1.5
+      overflow-wrap: anywhere
+  .settings-list-item-actions
+    display: flex
+    align-items: center
+    gap: 2px
+    flex-shrink: 0
+    .toggle-switch
+      margin-left: 12px
+  @media (max-width: 768px)
+    flex-wrap: wrap
+    .settings-list-item-text
+      flex-basis: calc(100% - 32px)
+    .settings-list-item-actions
+      margin-left: 28px
+
+.settings-empty
+  margin: 0
+  color: var(--subtext)
+  font-size: 13px
+
+.settings-number-input
+  width: 80px
+  height: 36px
+  box-sizing: border-box
+  padding: 0 10px
+  border: 1px solid var(--border-strong)
+  border-radius: 3px
+  background: var(--surface)
+  color: var(--text)
+  font: inherit
+  font-size: 14px
+  text-align: right
+  &:focus
+    outline: none
+    border-color: var(--primary)
+  &:disabled
+    opacity: .5
+    cursor: not-allowed
+
+.settings-unit
+  color: var(--subtext)
+  font-size: 13px

@@ -1,0 +1,102 @@
+@use "@/common/styles/tokens"
+
+.toast-container
+  position: fixed
+  bottom: 24px
+  right: 24px
+  display: flex
+  flex-direction: column-reverse
+  gap: 10px
+  z-index: tokens.$layer-toast
+  pointer-events: none
+  max-width: 400px
+  width: calc(100% - 48px)
+
+.toast
+  --toast-accent: var(--primary)
+  display: flex
+  align-items: flex-start
+  gap: 12px
+  width: 100%
+  box-sizing: border-box
+  padding: 14px 12px 14px 14px
+  background-color: var(--surface)
+  border: 1px solid var(--border-strong)
+  border-left: 4px solid var(--toast-accent)
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18)
+  pointer-events: all
+  animation: toast-enter 0.2s ease-out
+
+  &.toast-exit
+    animation: toast-exit 0.15s ease-in forwards
+
+  &[data-type="Success"]
+    --toast-accent: var(--success)
+
+  &[data-type="Error"]
+    --toast-accent: var(--error)
+
+  &[data-type="Warning"]
+    --toast-accent: var(--warning)
+
+.toast-icon
+  display: flex
+  flex-shrink: 0
+  color: var(--toast-accent)
+
+  svg
+    width: 20px
+    height: 20px
+
+.toast-content
+  flex: 1
+  min-width: 0
+
+.toast-title
+  font-size: 14px
+  font-weight: 600
+  color: var(--text)
+
+.toast-description
+  margin-top: 2px
+  font-size: 14px
+  line-height: 1.5
+  color: var(--subtext)
+  overflow-wrap: anywhere
+
+.toast-close
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-shrink: 0
+  width: 28px
+  height: 28px
+  padding: 0
+  border: 0
+  background: none
+  color: var(--subtext)
+  cursor: pointer
+
+  svg
+    width: 16px
+    height: 16px
+
+  &:hover
+    color: var(--text)
+    background-color: var(--hover)
+
+@keyframes toast-enter
+  from
+    opacity: 0
+    transform: translateY(8px)
+
+@keyframes toast-exit
+  to
+    opacity: 0
+    transform: translateY(8px)
+
+@media (max-width: 480px)
+  .toast-container
+    bottom: 16px
+    right: 16px
+    width: calc(100% - 32px)

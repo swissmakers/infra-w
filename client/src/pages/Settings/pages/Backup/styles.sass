@@ -1,0 +1,124 @@
+.backup-usage
+  width: 100%
+  border-collapse: collapse
+  font-size: 14px
+  th, td
+    padding: 8px 0
+    border-top: 1px solid var(--border)
+    vertical-align: middle
+  tbody tr:first-child
+    th, td
+      border-top: 0
+      padding-top: 0
+  th
+    text-align: left
+    font-weight: 500
+  td
+    text-align: right
+    font-variant-numeric: tabular-nums
+    &:last-child
+      width: 44px
+  tfoot
+    th, td
+      border-top-color: var(--border-strong)
+      font-weight: 600
+
+.backup-includes
+  display: flex
+  flex-wrap: wrap
+  gap: 8px 20px
+.backup-include
+  display: flex
+  align-items: center
+  gap: 8px
+  label
+    font-size: 14px
+    cursor: pointer
+
+.backup-providers
+  margin: 0
+  padding: 0
+  list-style: none
+  > li
+    border-top: 1px solid var(--border)
+    &:first-child
+      border-top: 0
+      .backup-provider
+        padding-top: 0
+
+  .backup-provider
+    display: flex
+    align-items: center
+    gap: 2px
+    padding: 8px 0
+
+  .backup-provider-toggle
+    flex: 1
+    min-width: 0
+    display: flex
+    align-items: center
+    gap: 10px
+    padding: 4px 8px 4px 0
+    border: 0
+    background: none
+    color: var(--text)
+    font: inherit
+    text-align: left
+    cursor: pointer
+    svg
+      width: 18px
+      height: 18px
+      flex-shrink: 0
+      color: var(--subtext)
+    .backup-chevron
+      width: 16px
+      height: 16px
+      transition: transform .12s ease
+    &[aria-expanded="true"] .backup-chevron
+      transform: rotate(90deg)
+    > span
+      min-width: 0
+    strong
+      display: block
+      font-size: 14px
+      font-weight: 500
+    span span
+      display: block
+      margin-top: 3px
+      color: var(--subtext)
+      font-size: 13px
+      overflow-wrap: anywhere
+    &:hover strong
+      text-decoration: underline
+      text-underline-offset: 3px
+
+  .backup-archives
+    margin: 0 0 12px 54px
+    padding-top: 10px
+    border-top: 1px solid var(--border)
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+    li
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 12px
+      padding: 6px 0
+      border-top: 1px solid var(--border)
+      &:first-child
+        border-top: 0
+        padding-top: 0
+    div
+      min-width: 0
+    strong
+      display: block
+      font-size: 13px
+      font-weight: 500
+      overflow-wrap: anywhere
+    span
+      font-size: 12px
+      color: var(--subtext)
+    @media (max-width: 768px)
+      margin-left: 26px

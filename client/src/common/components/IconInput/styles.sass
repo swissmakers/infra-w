@@ -1,0 +1,37 @@
+.input-container
+  position: relative
+  width: 100%
+  min-width: 0
+  &.no-icon .input
+    padding-left: 10px
+  .input-icon
+    position: absolute
+    top: 50%
+    left: 11px
+    width: 15px
+    height: 15px
+    transform: translateY(-50%)
+    color: var(--subtext)
+    pointer-events: none
+  .input
+    padding: 0 10px 0 34px
+    border: 1px solid var(--border-strong)
+    background: var(--surface)
+    color: var(--text)
+    box-sizing: border-box
+    border-radius: 3px
+    font-size: 13px
+    line-height: 1.5
+    width: 100%
+    min-width: 0
+    height: 36px
+    &:focus
+      border-color: var(--primary)
+      outline: 1px solid var(--primary)
+      outline-offset: -1px
+    &::placeholder
+      color: var(--subtext)
+      opacity: .75
+    &:disabled
+      background: var(--background)
+      opacity: .65

@@ -1,0 +1,99 @@
+:root
+  --font-ui: "IBM Plex Sans", "Segoe UI", sans-serif
+  --font-code: "SFMono-Regular", Consolas, monospace
+
+// color pairs meet WCAG 2.2 AA: 4.5:1 for text, 3:1 for controls
+:root, :root[data-theme="light"]
+  color-scheme: light
+  --background: #f8f8f8
+  --surface: #ffffff
+  --terminal: #ffffff
+  --lighter-background: #f3f5f8
+  --dialog-background: rgba(0, 32, 75, 0.42)
+  --gray-full: #e3e7ee
+  --darker-gray: #eef1f5
+  --dark-gray: #eef1f5
+  --gray: #d5dae3
+  --light-gray: #2f3d56
+  --border: #e1e5ec
+  --border-strong: #7e889b
+  --hover: #edf2fc
+  --primary: #2a5bd6
+  --primary-opacity: #e6edfb
+  --action: #2a5bd6
+  --action-text: #ffffff
+  --error: #b8322c
+  --error-opacity: #fbeceb
+  --success: #1c7340
+  --success-opacity: #e8f5ed
+  --warning: #8a5700
+  --warning-opacity: #fbf1df
+  --white: #00204b
+  --subtext: #4a5870
+  --text: #00204b
+
+@mixin dark-tokens
+  color-scheme: dark
+  --background: #0e1624
+  --surface: #141e30
+  --terminal: #0f1827
+  --lighter-background: #19243a
+  --dialog-background: rgba(3, 8, 18, 0.7)
+  --gray-full: #2a3650
+  --darker-gray: #111a2b
+  --dark-gray: #1d2940
+  --gray: #334058
+  --light-gray: #d4dbe8
+  --border: #253149
+  --border-strong: #65748f
+  --hover: #1f2b42
+  --primary: #86a8ff
+  --primary-opacity: #1d2d52
+  --action: #2f62dd
+  --action-text: #ffffff
+  --error: #f39b95
+  --error-opacity: #3a2226
+  --success: #6fd49a
+  --success-opacity: #16322a
+  --warning: #e8bd66
+  --warning-opacity: #372c17
+  --white: #e8edf6
+  --subtext: #a6b2c7
+  --text: #e8edf6
+
+:root[data-theme="dark"], :root[data-theme="oled"]
+  @include dark-tokens
+
+// until the preferences set a theme, follow the OS to avoid a light flash
+@media (prefers-color-scheme: dark)
+  :root:not([data-theme])
+    @include dark-tokens
+
+:root[data-theme="oled"]
+  --background: #000000
+  --surface: #0a0f19
+  --terminal: #000000
+  --lighter-background: #0f1623
+  --hover: #172036
+  --border: #1c2638
+  --border-strong: #5d6b85
+
+$background: var(--background)
+$dialog-background: var(--dialog-background)
+$terminal: var(--terminal)
+$lighter-background: var(--lighter-background)
+$gray-full: var(--gray-full)
+$darker-gray: var(--darker-gray)
+$dark-gray: var(--dark-gray)
+$gray: var(--gray)
+$light-gray: var(--light-gray)
+$primary: var(--primary)
+$primary-opacity: var(--primary-opacity)
+$error: var(--error)
+$error-opacity: var(--error-opacity)
+$success: var(--success)
+$success-opacity: var(--success-opacity)
+$warning: var(--warning)
+$warning-opacity: var(--warning-opacity)
+$white: var(--white)
+$subtext: var(--subtext)

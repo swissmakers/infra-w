@@ -1,0 +1,20 @@
+@use "@/common/styles/tokens"
+@use "@/common/styles/colors" as *
+
+.drop-indicator
+  position: absolute
+  left: 0
+  right: 0
+  height: 2px
+  pointer-events: none
+  z-index: tokens.$layer-menu
+
+  &.drop-indicator-before
+    top: -1px
+
+  &.drop-indicator-after
+    bottom: -1px
+
+  .drop-line
+    height: 2px
+    background-color: $primary

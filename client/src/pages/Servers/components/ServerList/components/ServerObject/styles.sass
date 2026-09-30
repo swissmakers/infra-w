@@ -1,0 +1,97 @@
+@use "@/common/styles/colors"
+
+$mobile: 768px
+
+.server-object
+  display: flex
+  align-items: center
+  gap: 0.5rem
+  color: var(--text)
+  border: 1px solid transparent
+  padding: 0.4rem
+  cursor: pointer
+  font-size: 14px
+  font-weight: 500
+  transition: background-color 0.15s ease, border-color 0.15s ease
+
+  @media (max-width: $mobile)
+    padding: 0.6rem 0.5rem
+    gap: 0.625rem
+
+  .system-icon, .pve-icon
+    display: flex
+    flex-shrink: 0
+    color: var(--subtext)
+
+    svg
+      width: 1.05rem
+      height: 1.05rem
+
+  .pve-icon
+    color: var(--warning)
+
+  .system-icon-offline, .pve-icon-offline
+    opacity: 0.4
+
+  p
+    margin: 0
+    flex: 1
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+    @media (max-width: $mobile)
+      font-size: 0.95rem
+
+  .hibernation-indicator
+    display: flex
+    align-items: center
+    gap: 3px
+    background-color: colors.$primary-opacity
+    border: 1px solid colors.$primary
+    border-radius: 10px
+    padding: 2px 6px
+    margin-left: auto
+    flex-shrink: 0
+
+    @media (max-width: $mobile)
+      padding: 3px 8px
+
+    svg
+      width: 0.75rem
+      height: 0.75rem
+      color: colors.$primary
+
+    span
+      font-size: 0.8125rem
+      font-weight: 600
+      color: colors.$primary
+      line-height: 1
+
+      @media (max-width: $mobile)
+        font-size: 0.8125rem
+
+  .tag-circles
+    display: flex
+    gap: 4px
+    margin-left: auto
+    padding-right: 4px
+    flex-shrink: 0
+
+    .tag-circle
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      flex-shrink: 0
+
+  &:hover
+    background-color: var(--hover)
+    border-radius: 0.3rem
+
+  &:active
+    background-color: var(--border)
+
+.server-is-over
+  background-color: colors.$dark-gray
+  border: 1px solid colors.$gray
+  border-radius: 0.3rem

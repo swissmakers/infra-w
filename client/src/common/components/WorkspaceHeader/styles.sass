@@ -1,0 +1,159 @@
+.workspace-header
+  height: 76px
+  min-height: 76px
+  display: flex
+  align-items: stretch
+  gap: 28px
+  padding: 0 28px
+  background: var(--surface)
+  border-bottom: 1px solid var(--border)
+  position: relative
+  z-index: 100
+  color: var(--text)
+  box-sizing: border-box
+  .workspace-brand
+    display: flex
+    align-items: center
+    gap: 12px
+    text-decoration: none
+    color: inherit
+    min-width: 236px
+    flex-shrink: 0
+  .brand-mark
+    display: grid
+    place-items: center
+    width: 44px
+    height: 44px
+    flex: 0 0 44px
+  .brand-type
+    font-size: 24px
+    font-weight: 700
+    letter-spacing: 2.5px
+    line-height: 1
+    > span
+      display: block
+      font-size: 8px
+      font-weight: 500
+      letter-spacing: 1px
+      text-transform: uppercase
+      margin-top: 6px
+  .brand-version
+    align-self: flex-start
+    margin-top: 23px
+    font: 12px var(--font-code)
+    color: var(--subtext)
+  button
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    background: transparent
+    color: inherit
+    border: 0
+    padding: 9px
+    cursor: pointer
+    border-radius: 3px
+    &:hover
+      background: var(--hover)
+  .workspace-global-nav
+    display: flex
+    align-items: stretch
+    gap: 27px
+    > a
+      display: flex
+      align-items: center
+      color: var(--subtext)
+      text-decoration: none
+      font-size: 14px
+      font-weight: 500
+      white-space: nowrap
+      border-bottom: 2px solid transparent
+      padding-top: 2px
+      &.active
+        border-color: var(--primary)
+        color: var(--text)
+      &:hover
+        color: var(--text)
+  .workspace-header-tools
+    margin-left: auto
+    display: flex
+    align-items: center
+    gap: 12px
+  .stream-state
+    display: inline-flex
+    align-items: center
+    gap: 7px
+    font-size: 12px
+    color: var(--subtext)
+    white-space: nowrap
+    i
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background: var(--warning)
+    &.connected i
+      background: var(--success)
+  .header-account
+    position: relative
+    border-left: 1px solid var(--border)
+    padding-left: 12px
+  .header-account-button
+    gap: 8px
+    font-size: 13px
+    max-width: 200px
+    > span
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+  .header-account-menu
+    position: absolute
+    right: 0
+    top: calc(100% + 12px)
+    min-width: 220px
+    background: var(--surface)
+    border: 1px solid var(--border)
+    box-shadow: 0 12px 36px #0002
+    padding: 6px
+    display: flex
+    flex-direction: column
+    .account-menu-name
+      font-size: 12px
+      padding: 12px 10px
+      color: var(--subtext)
+      border-bottom: 1px solid var(--border)
+      margin-bottom: 4px
+    button
+      text-align: left
+      justify-content: flex-start
+      gap: 8px
+      padding: 10px
+      font-size: 13px
+  @media (max-width: 1200px)
+    gap: 20px
+    padding: 0 20px
+    .workspace-brand
+      min-width: 200px
+    .stream-state
+      display: none
+    .workspace-global-nav
+      gap: 20px
+  @media (max-width: 900px)
+    .header-account-button > span
+      display: none
+  @media (max-width: 768px)
+    height: 68px
+    min-height: 68px
+    padding: 0 18px
+    gap: 12px
+    .workspace-brand
+      min-width: 0
+    .brand-type
+      font-size: 22px
+      letter-spacing: 2px
+    .brand-version, .workspace-global-nav, .workspace-navigation-toggle
+      display: none
+    .workspace-header-tools
+      gap: 4px
+    .header-account
+      padding-left: 4px
+    .brand-type > span
+      font-size: 7px

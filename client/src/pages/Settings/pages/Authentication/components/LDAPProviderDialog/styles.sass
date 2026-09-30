@@ -1,0 +1,153 @@
+@use "@/common/styles/colors" as *
+
+.ldap-provider-dialog
+  display: flex
+  flex-direction: column
+  gap: 1rem
+  padding: 0
+  width: min(720px, 80vw)
+  max-height: 78dvh
+  overflow-y: auto
+
+  h2
+    margin: 0 0 1rem
+
+  .form-group
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+
+    label
+      font-size: 0.9rem
+      font-weight: 600
+      color: $subtext
+
+  .form-row
+    display: flex
+    gap: 1rem
+
+    .form-group
+      flex: 1
+
+    .port-field
+      flex: 0 0 150px
+
+  .toggle-group
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+  .advanced-settings
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    margin-top: 0.5rem
+
+    .advanced-form
+      display: flex
+      flex-direction: column
+      gap: 1rem
+      padding: 1rem
+      background-color: $dark-gray
+      border-radius: 3px
+      border: 1px solid $gray
+
+  .ldap-textarea
+    min-height: 5.5rem
+    resize: vertical
+    border: 1px solid $gray
+    border-radius: 3px
+    background: $dark-gray
+    color: $white
+    padding: 0.55rem 0.7rem
+    font-size: 0.875rem
+
+  .button-row
+    display: flex
+    gap: 0.5rem
+    justify-content: flex-end
+    margin-top: 0.5rem
+
+  .ldap-test-results
+    display: flex
+    flex-direction: column
+    gap: 0.6rem
+    padding: 0.9rem
+    border: 1px solid $gray
+    border-radius: 3px
+    background: $dark-gray
+
+    h3, h4
+      margin: 0
+
+    .diagnostic-grid
+      display: grid
+      grid-template-columns: 1fr 1fr
+      gap: 0.4rem 0.8rem
+      overflow-wrap: anywhere;
+
+      div
+        font-size: 0.875rem
+        color: $white
+
+      span
+        color: $subtext
+        font-weight: 600
+
+    .diagnostic-error
+      margin: 0
+      color: $error
+      font-size: 0.875rem
+
+    .diagnostic-list
+      display: flex
+      flex-direction: column
+      gap: 0.4rem
+
+      p
+        margin: 0
+        font-size: 0.875rem
+        color: $subtext
+
+      ul
+        margin: 0
+        padding-left: 1rem
+        display: flex
+        flex-direction: column
+        gap: 0.25rem
+
+      li
+        font-size: 0.875rem
+        line-height: 1.25
+
+  .ldap-preset
+    border: 1px solid $gray
+    padding: 20px
+    background: $lighter-background
+    h3
+      font-size: 14px
+      margin: 0 0 8px
+    p
+      font-size: 13px
+      color: $subtext
+      line-height: 1.6
+      margin: 8px 0
+    .preset-fields
+      display: grid
+      grid-template-columns: 1fr 1.2fr auto
+      gap: 12px
+      align-items: end
+      padding: 8px 0
+  .ldap-activation-note
+    color: $subtext
+    font-size: 13px
+    border-top: 1px solid $gray
+    padding-top: 16px
+  @media (max-width: 700px)
+    width: 100%
+    .ldap-preset .preset-fields
+      grid-template-columns: 1fr
+    .form-row
+      flex-direction: column
+      .port-field
+        flex: auto

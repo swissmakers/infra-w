@@ -1,0 +1,26 @@
+.identity-dialog
+  width: 28rem
+  user-select: none
+
+  .dialog-content
+    display: flex
+    flex-direction: column
+    gap: 18px
+
+    .form-group
+      display: flex
+      flex-direction: column
+
+    .form-row
+      display: grid
+      grid-template-columns: 1fr 1fr
+      @media (max-width: 768px)
+        grid-template-columns: 1fr
+
+  .dialog-actions
+    display: flex
+    justify-content: flex-end
+    gap: 10px
+    margin-top: 28px
+    padding-top: 20px
+    border-top: 1px solid var(--border)

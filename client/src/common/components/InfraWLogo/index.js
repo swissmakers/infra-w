@@ -1,0 +1,1 @@
+export { InfraWLogo as default } from "./InfraWLogo";

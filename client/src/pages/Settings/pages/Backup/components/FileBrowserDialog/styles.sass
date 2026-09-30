@@ -1,0 +1,47 @@
+.file-browser-dialog
+  display: flex
+  flex-direction: column
+  width: min(640px, calc(100vw - 48px))
+
+  .fb-list
+    max-height: 420px
+    overflow-y: auto
+    border-top: 1px solid var(--border)
+
+  .fb-note
+    margin: 0
+    padding: 24px 0
+    font-size: 13px
+    color: var(--subtext)
+
+  .fb-item
+    display: flex
+    align-items: center
+    gap: 10px
+    padding: 8px 0
+    border-bottom: 1px solid var(--border)
+
+    > svg
+      color: var(--subtext)
+      flex-shrink: 0
+
+  .fb-details
+    flex: 1
+    min-width: 0
+    display: flex
+    flex-direction: column
+
+  .fb-name
+    font-size: 14px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  .fb-meta
+    font-size: 12px
+    color: var(--subtext)
+
+  .fb-dialog-actions
+    display: flex
+    justify-content: flex-end
+    padding-top: 16px

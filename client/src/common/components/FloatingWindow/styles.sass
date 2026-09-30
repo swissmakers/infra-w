@@ -1,0 +1,89 @@
+@use "@/common/styles/tokens"
+
+.floating-window
+  position: fixed
+  display: flex
+  flex-direction: column
+  box-sizing: border-box
+  background-color: var(--surface)
+  border: 1px solid var(--border-strong)
+  border-radius: tokens.$radius
+  box-shadow: tokens.$shadow-lg
+  overflow: hidden
+  animation: floating-window-enter tokens.$transition-slow
+
+  &.maximized
+    border: 0
+    border-radius: 0
+
+  @media (prefers-reduced-motion: reduce)
+    animation: none
+
+.floating-window-header
+  display: flex
+  align-items: center
+  gap: 10px
+  min-height: 48px
+  padding: 0 8px 0 16px
+  background-color: var(--surface)
+  border-bottom: 1px solid var(--border)
+  flex-shrink: 0
+  cursor: move
+  user-select: none
+  touch-action: none
+
+  .maximized > &
+    cursor: default
+
+  > svg
+    width: 18px
+    height: 18px
+    flex-shrink: 0
+    color: var(--primary)
+
+  h2
+    margin: 0
+    min-width: 0
+    font-size: 14px
+    font-weight: 600
+    color: var(--text)
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+.floating-window-actions
+  display: flex
+  gap: 2px
+  margin-left: auto
+  flex-shrink: 0
+
+.floating-window-body
+  flex: 1
+  min-height: 0
+  position: relative
+  display: flex
+  flex-direction: column
+
+.floating-window-resize
+  position: absolute
+  right: 0
+  bottom: 0
+  display: grid
+  place-items: center
+  width: 20px
+  height: 20px
+  color: var(--subtext)
+  cursor: nwse-resize
+  touch-action: none
+
+  svg
+    width: 16px
+    height: 16px
+
+  &:hover
+    color: var(--text)
+
+@keyframes floating-window-enter
+  from
+    opacity: 0
+    transform: translateY(8px)

@@ -1,0 +1,99 @@
+name: Test, build the multi-arch image and push it to Harbor and Docker Hub on every commit to main
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: linux_amd64
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: |
+          corepack enable
+          yarn install --frozen-lockfile
+          cd client && yarn install --frozen-lockfile
+
+      - name: Server and utility tests
+        run: yarn test
+
+      - name: Lint server, tests and client (0 errors, 0 warnings)
+        run: yarn lint
+
+      - name: Client build
+        run: yarn build
+
+  build:
+    needs: test
+    runs-on: linux_amd64
+    # secrets cannot be used in step conditions, so they are checked through env
+    env:
+      HARBOR_REGISTRY: ${{ secrets.HARBOR_REGISTRY }}
+      HARBOR_PROJECT: ${{ secrets.HARBOR_PROJECT }}
+      HARBOR_USERNAME: ${{ secrets.HARBOR_USERNAME }}
+      HARBOR_PASSWORD: ${{ secrets.HARBOR_PASSWORD }}
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+      # optional Docker Hub organization, defaults to the user name
+      DOCKERHUB_NAMESPACE: ${{ secrets.DOCKERHUB_NAMESPACE }}
+      LOCAL_MANIFEST: localhost/infra-w:${{ github.sha }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Free disk before multi-arch build
+        run: |
+          podman system prune -af --volumes || true
+          df -h
+
+      - name: Enable binfmt/QEMU for cross-arch RUN steps
+        run: |
+          podman run --privileged --rm docker.io/tonistiigi/binfmt --install all
+
+      - name: Read version
+        run: |
+          VERSION="$(grep -m1 '"version"' package.json | cut -d'"' -f4)"
+          test -n "$VERSION"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+      - name: Login to Swissmakers Registry
+        if: ${{ env.HARBOR_REGISTRY != '' && env.HARBOR_USERNAME != '' && env.HARBOR_PASSWORD != '' }}
+        run: |
+          echo "$HARBOR_PASSWORD" | podman login --username "$HARBOR_USERNAME" --password-stdin "$HARBOR_REGISTRY"
+
+      - name: Login to Docker Hub
+        if: ${{ env.DOCKERHUB_USERNAME != '' && env.DOCKERHUB_TOKEN != '' }}
+        run: |
+          echo "$DOCKERHUB_TOKEN" | podman login docker.io --username "$DOCKERHUB_USERNAME" --password-stdin
+
+      - name: Build multi-arch manifest locally
+        env:
+          PLATFORMS: linux/amd64,linux/arm64
+        run: |
+          podman build --pull \
+            --platform "$PLATFORMS" \
+            --manifest "$LOCAL_MANIFEST" \
+            .
+          podman manifest inspect "$LOCAL_MANIFEST"
+
+      - name: Push to Swissmakers Registry
+        if: ${{ env.HARBOR_REGISTRY != '' && env.HARBOR_PROJECT != '' && env.HARBOR_USERNAME != '' && env.HARBOR_PASSWORD != '' }}
+        run: |
+          DEST="docker://$HARBOR_REGISTRY/$HARBOR_PROJECT/infra-w"
+          for TAG in "${{ github.sha }}" "$VERSION" latest; do
+            podman manifest push --all "$LOCAL_MANIFEST" "$DEST:$TAG"
+          done
+
+      - name: Push to Docker Hub
+        if: ${{ env.DOCKERHUB_USERNAME != '' && env.DOCKERHUB_TOKEN != '' }}
+        run: |
+          DEST="docker://docker.io/${DOCKERHUB_NAMESPACE:-$DOCKERHUB_USERNAME}/infra-w"
+          for TAG in "${{ github.sha }}" "$VERSION" latest; do
+            podman manifest push --all "$LOCAL_MANIFEST" "$DEST:$TAG"
+          done

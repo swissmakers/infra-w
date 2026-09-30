@@ -1,0 +1,37 @@
+.tab-switcher
+  display: flex
+  gap: 20px
+  border-bottom: 1px solid var(--border)
+  overflow-x: auto
+  scrollbar-width: none
+
+  .tab-switcher-tab
+    display: flex
+    align-items: center
+    gap: 6px
+    margin-bottom: -1px
+    padding: 8px 0 10px
+    border: 0
+    border-bottom: 2px solid transparent
+    background: transparent
+    color: var(--subtext)
+    font: inherit
+    font-size: 13px
+    white-space: nowrap
+    cursor: pointer
+
+    svg
+      width: 15px
+      height: 15px
+
+    &:hover
+      color: var(--text)
+
+    &.active
+      color: var(--text)
+      font-weight: 500
+      border-bottom-color: var(--primary)
+
+    &:focus-visible
+      outline: 2px solid var(--primary)
+      outline-offset: 2px

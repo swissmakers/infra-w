@@ -1,0 +1,34 @@
+.audit-filters
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+  align-items: end
+  gap: 12px
+  margin-bottom: 24px
+
+  @media (max-width: 600px)
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+
+  .filter-group
+    display: flex
+    flex-direction: column
+    gap: 6px
+    min-width: 0
+    > span
+      font-size: 12px
+      font-weight: 500
+      color: var(--subtext)
+
+  .date-input
+    height: 36px
+    box-sizing: border-box
+    padding: 0 10px
+    border: 1px solid var(--border-strong)
+    border-radius: 3px
+    background: var(--surface)
+    color: var(--text)
+    font: inherit
+    font-size: 13px
+    color-scheme: inherit
+    &:focus
+      outline: none
+      border-color: var(--primary)

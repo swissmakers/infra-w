@@ -1,0 +1,35 @@
+.standalone-session
+  width: 100vw
+  height: var(--content-height)
+  position: relative
+  overflow: hidden
+  background: var(--background)
+
+.standalone-message
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 12px
+  height: 100vh
+  padding: 24px
+  box-sizing: border-box
+  text-align: center
+  background: var(--background)
+  color: var(--text)
+
+  svg
+    width: 48px
+    height: 48px
+    color: var(--error)
+
+  h1
+    margin: 0
+    font-size: 18px
+    font-weight: 500
+
+  p
+    margin: 0
+    max-width: 24rem
+    color: var(--subtext)
+    line-height: 1.5

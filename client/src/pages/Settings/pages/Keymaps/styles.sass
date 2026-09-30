@@ -1,0 +1,19 @@
+.keybind-display
+  min-width: 132px
+  min-height: 36px
+  padding: 0 12px
+  border: 1px solid var(--border-strong)
+  border-radius: 3px
+  background: var(--surface)
+  color: var(--text)
+  font: 500 12px var(--font-code)
+  cursor: pointer
+  &:hover, &:focus-visible, &.recording
+    border-color: var(--primary)
+    outline: none
+  &.recording
+    cursor: default
+  span
+    color: var(--subtext)
+    font-family: var(--font-ui)
+    font-weight: 400

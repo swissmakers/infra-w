@@ -1,0 +1,120 @@
+$mobile: 768px
+
+.paginated-table-container
+  display: flex
+  flex-direction: column
+  min-width: 0
+  border-top: 1px solid var(--border)
+
+  .no-data
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 48px 16px
+    color: var(--subtext)
+    text-align: center
+
+    svg
+      width: 28px
+      height: 28px
+      margin-bottom: 12px
+
+    h3
+      margin: 0 0 6px
+      font-size: 14px
+      font-weight: 500
+      color: var(--text)
+
+    p
+      margin: 0
+      font-size: 13px
+
+.paginated-table
+  width: 100%
+  min-width: 0
+
+  .table-header, .table-row
+    display: grid
+    grid-template-columns: var(--table-columns)
+    gap: 16px
+    padding: 10px 8px
+    align-items: center
+
+  .table-header
+    border-bottom: 1px solid var(--border)
+    font-size: 12px
+    font-weight: 500
+    color: var(--subtext)
+
+    @media (max-width: $mobile)
+      display: none
+
+    .header-cell
+      display: flex
+      align-items: center
+      gap: 6px
+      min-width: 0
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+
+  .table-row
+    border-bottom: 1px solid var(--border)
+
+    @media (max-width: $mobile)
+      display: flex
+      flex-direction: column
+      align-items: stretch
+      gap: 6px
+      padding: 12px 4px
+
+    &.clickable
+      cursor: pointer
+
+      &:hover
+        background: var(--hover)
+
+    .cell
+      display: flex
+      align-items: center
+      min-width: 0
+      overflow: hidden
+      font-size: 13px
+      color: var(--text)
+
+      @media (max-width: $mobile)
+        gap: 8px
+
+        &[data-label]:not([data-label=""])::before
+          content: attr(data-label)
+          min-width: 72px
+          flex-shrink: 0
+          font-size: 12px
+          color: var(--subtext)
+
+.pagination
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 12px
+  padding: 12px 8px 0
+
+  .pagination-info
+    color: var(--subtext)
+    font-size: 13px
+
+    @media (max-width: $mobile)
+      display: none
+
+  .pagination-controls
+    display: flex
+    align-items: center
+    gap: 10px
+
+    @media (max-width: $mobile)
+      width: 100%
+      justify-content: space-between
+
+    .page-info
+      font-size: 13px
+      white-space: nowrap

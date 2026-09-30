@@ -1,0 +1,27 @@
+.api-token-dialog
+  display: flex
+  flex-direction: column
+  gap: 12px
+  width: min(460px, 80vw)
+  h2, p
+    margin: 0
+  p
+    color: var(--subtext)
+    font-size: 13px
+  .api-token-value
+    display: flex
+    align-items: center
+    gap: 8px
+    padding: 8px 10px
+    border: 1px solid var(--border-strong)
+    background: var(--surface)
+    code
+      flex: 1
+      min-width: 0
+      font-family: var(--font-code)
+      font-size: 13px
+      overflow-wrap: anywhere
+  .api-token-actions
+    display: flex
+    justify-content: flex-end
+    gap: 8px

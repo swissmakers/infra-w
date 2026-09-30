@@ -1,0 +1,164 @@
+.dialog-area
+  position: fixed
+  inset: 0
+  background: var(--dialog-background)
+  display: flex
+  align-items: center
+  justify-content: center
+  isolation: isolate
+  padding: 32px
+  box-sizing: border-box
+
+.dialog
+  position: relative
+  display: block
+  padding: 32px
+  color: var(--text)
+  background: var(--surface)
+  border: 1px solid var(--border-strong)
+  border-radius: 4px
+  width: max-content
+  max-width: min(1040px, calc(100vw - 64px))
+  max-height: calc(100dvh - 64px)
+  box-sizing: border-box
+  overflow: auto
+  box-shadow: 0 24px 80px #0003
+  animation: dialog-appear .13s ease-out
+  &:focus
+    outline: none
+  > div, > form
+    max-width: 100%
+    box-sizing: border-box
+  h2:first-child
+    font-size: 21px
+    font-weight: 500
+    letter-spacing: -.5px
+    margin: 0 0 28px
+    padding: 0 36px 20px 0
+    border-bottom: 1px solid var(--border)
+  .form-group > label
+    color: var(--text)
+    display: block
+  .form-row
+    gap: 18px
+  .form-group .form-hint
+    margin: 0
+    font-size: 12px
+    color: var(--subtext)
+  .button-row
+    border-top: 1px solid var(--border)
+    padding-top: 20px
+    margin-top: 28px
+    justify-content: flex-end
+    gap: 10px
+    flex-wrap: wrap
+  textarea
+    border: 1px solid var(--border-strong)
+    background: var(--surface)
+    color: var(--text)
+    border-radius: 3px
+    font: 13px/1.6 var(--font-code)
+    padding: 12px
+    box-sizing: border-box
+  .advanced-settings
+    border-top: 1px solid var(--border)
+    padding-top: 20px
+    margin-top: 22px
+  .advanced-form
+    padding-top: 20px
+  .dialog-close-btn
+    position: absolute
+    right: 22px
+    top: 22px
+    width: 30px
+    height: 30px
+    border: 0
+    background: transparent
+    color: var(--subtext)
+    display: grid
+    place-items: center
+    cursor: pointer
+    padding: 0
+    z-index: 10
+    border-radius: 3px
+    &:hover
+      color: var(--text)
+      background: var(--hover)
+
+.dialog-confirm-overlay
+  position: absolute
+  inset: 0
+  background: var(--dialog-background)
+  display: grid
+  place-items: center
+  padding: 20px
+  z-index: 1
+
+.dialog-confirm
+  background: var(--surface)
+  border: 1px solid var(--border-strong)
+  border-radius: 4px
+  width: min(420px, 100%)
+  padding: 28px
+  box-sizing: border-box
+  box-shadow: 0 20px 60px #0003
+  h3
+    font-size: 18px
+    font-weight: 500
+    margin: 0 0 12px
+  p
+    color: var(--subtext)
+    font-size: 14px
+    line-height: 1.7
+    margin-bottom: 24px
+  .dialog-confirm-actions
+    display: flex
+    justify-content: flex-end
+    gap: 10px
+    flex-wrap: wrap
+
+@keyframes dialog-appear
+  from
+    opacity: 0
+    transform: translateY(4px)
+  to
+    opacity: 1
+    transform: none
+
+@media (max-width: 768px)
+  .dialog-area
+    padding: 12px
+  .dialog
+    padding: 24px 20px
+    max-width: calc(100vw - 24px)
+    max-height: calc(100dvh - 24px)
+    h2:first-child
+      font-size: 19px
+    .dialog-close-btn
+      top: 16px
+      right: 12px
+
+.dialog-area .dialog
+  .form-group
+    margin-bottom: 0
+    gap: 6px
+    > label
+      margin-bottom: 0
+      font-size: 13px
+      font-weight: 500
+  input.small-input, select.small-input, .inline-toggle-input
+    border: 1px solid var(--border-strong)
+    border-radius: 3px
+    background: var(--surface)
+    color: var(--text)
+    padding: 10px 12px
+    min-height: 39px
+    font: 13px var(--font-ui)
+    box-sizing: border-box
+  .inline-toggle-input
+    padding-block: 8px
+  .rule-card, .advanced-form
+    border-radius: 3px
+    box-shadow: none
+  .ldap-provider-dialog, .integration-dialog, .server-dialog-content
+    gap: 20px

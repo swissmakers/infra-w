@@ -1,0 +1,56 @@
+.btn
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  gap: 8px
+  min-height: 36px
+  padding: 8px 15px
+  border: 1px solid var(--action)
+  border-radius: 3px
+  background: var(--action)
+  color: var(--action-text)
+  font-size: 13px
+  font-weight: 500
+  line-height: 1.35
+  cursor: pointer
+  transition: opacity .12s ease, background .12s ease
+  white-space: nowrap
+  svg
+    width: 15px
+    height: 15px
+    flex-shrink: 0
+  .button-label
+    font-size: inherit
+    color: inherit
+  &:hover
+    opacity: .86
+  &:disabled
+    opacity: .4
+    cursor: not-allowed
+  &.type-secondary, &.type-danger, &.type-error, &.type-warning, &.type-success
+    background: transparent
+    border-color: var(--border-strong)
+    color: var(--text)
+    &:hover
+      background: var(--hover)
+      opacity: 1
+  &.icon-only
+    padding: 8px
+    min-width: 32px
+    min-height: 32px
+    background: transparent
+    border-color: transparent
+    color: var(--subtext)
+    &:hover
+      background: var(--hover)
+      color: var(--text)
+  &.is-busy svg
+    animation: button-busy 1s linear infinite
+    @media (prefers-reduced-motion: reduce)
+      animation: none
+  @media (max-width: 480px)
+    white-space: normal
+
+@keyframes button-busy
+  to
+    transform: rotate(360deg)

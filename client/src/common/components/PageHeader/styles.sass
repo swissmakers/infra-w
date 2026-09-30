@@ -1,0 +1,49 @@
+.page-document
+  height: 100%
+  overflow-y: auto
+  box-sizing: border-box
+  padding: 44px clamp(20px, 4vw, 76px) 80px
+  background: var(--surface)
+
+  @media (max-width: 768px)
+    padding: 28px 20px 60px
+
+.page-header
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  gap: 24px
+  padding-bottom: 28px
+  margin-bottom: 32px
+  border-bottom: 1px solid var(--border)
+
+  @media (max-width: 768px)
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 24px
+
+  .page-eyebrow
+    font-size: 12px
+    letter-spacing: 1.7px
+    text-transform: uppercase
+    color: var(--subtext)
+    margin: 0 0 15px
+
+  h1
+    font-size: clamp(25px, 2.3vw, 34px)
+    font-weight: 500
+    letter-spacing: -1px
+    margin: 0
+
+  .page-subtitle
+    color: var(--subtext)
+    font-size: 14px
+    margin: 10px 0 0
+    max-width: 720px
+    line-height: 1.7
+
+  .page-header-actions
+    display: flex
+    gap: 10px
+    align-items: center
+    flex-shrink: 0

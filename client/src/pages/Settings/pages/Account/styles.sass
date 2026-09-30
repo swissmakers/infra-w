@@ -1,0 +1,26 @@
+.account-page
+  .account-name-fields
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    gap: 20px
+    @media (max-width: 768px)
+      grid-template-columns: 1fr
+    .form-group
+      display: flex
+      flex-direction: column
+      gap: 6px
+      label
+        font-size: 13px
+        font-weight: 500
+      .fd-updated
+        border-color: var(--success)
+
+  .passkey-name-input
+    border: 1px solid var(--primary)
+    background: var(--surface)
+    color: var(--text)
+    font: inherit
+    font-size: 14px
+    padding: 3px 6px
+    border-radius: 2px
+    outline: none

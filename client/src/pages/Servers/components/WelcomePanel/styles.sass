@@ -1,0 +1,228 @@
+.welcome-panel
+  flex: 1
+  width: 100%
+
+  h2, h3, p, dl, dd
+    margin: 0
+
+  .overview-grid
+    display: grid
+    grid-template-columns: minmax(0, 1fr) 260px
+    gap: 48px
+    max-width: 1280px
+
+  .overview-section + .overview-section
+    margin-top: 40px
+
+  .overview-section h2
+    display: flex
+    align-items: center
+    gap: 8px
+    font-size: 14px
+    font-weight: 600
+    margin-bottom: 12px
+    > span
+      color: var(--subtext)
+      font-weight: 400
+      font-variant-numeric: tabular-nums
+
+  .host-rows
+    border-top: 1px solid var(--border)
+
+  .host-row
+    width: 100%
+    display: flex
+    align-items: center
+    gap: 14px
+    padding: 12px 8px
+    border: 0
+    border-bottom: 1px solid var(--border)
+    background: transparent
+    color: var(--text)
+    font: inherit
+    text-align: left
+    cursor: pointer
+    box-sizing: border-box
+    &:hover, &:focus-visible
+      background: var(--hover)
+    &:focus-visible
+      outline-offset: -2px
+    &:disabled
+      opacity: 0.55
+      cursor: not-allowed
+
+  .host-protocol
+    width: 38px
+    padding: 5px 0
+    flex-shrink: 0
+    text-align: center
+    border: 1px solid var(--border)
+    border-radius: 2px
+    font-size: 12px
+    font-weight: 600
+    color: var(--subtext)
+
+  .host-details
+    flex: 1
+    min-width: 0
+    strong
+      display: block
+      font-size: 14px
+      font-weight: 500
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+    > span
+      display: flex
+      align-items: center
+      gap: 10px
+      margin-top: 2px
+      color: var(--subtext)
+      font-size: 12px
+      white-space: nowrap
+      overflow: hidden
+    code
+      font: 12px var(--font-code)
+    .host-os, .host-group
+      border-left: 1px solid var(--border)
+      padding-left: 10px
+      overflow: hidden
+      text-overflow: ellipsis
+
+  .host-meta
+    display: flex
+    align-items: center
+    gap: 4px
+    color: var(--subtext)
+    font-size: 12px
+    white-space: nowrap
+
+  .host-state
+    display: flex
+    align-items: center
+    gap: 6px
+    width: 88px
+    font-size: 12px
+    color: var(--subtext)
+    i
+      width: 6px
+      height: 6px
+      border-radius: 50%
+      background: currentColor
+    &.online
+      color: var(--success)
+    &.offline
+      color: var(--error)
+
+  .host-connect
+    color: var(--subtext)
+    flex-shrink: 0
+
+  .overview-note
+    color: var(--subtext)
+    font-size: 14px
+    line-height: 1.6
+    padding: 16px 0
+    .btn
+      margin-top: 12px
+
+  .overview-empty
+    border: 1px dashed var(--border-strong)
+    padding: 40px 24px
+    text-align: center
+    color: var(--subtext)
+    h3
+      margin-top: 12px
+      color: var(--text)
+      font-size: 15px
+      font-weight: 500
+    p
+      margin: 8px auto 20px
+      max-width: 40ch
+      font-size: 14px
+    .overview-empty-actions
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      gap: 10px
+
+  .overview-footnote
+    display: flex
+    align-items: center
+    gap: 8px
+    margin-top: 14px
+    font-size: 12px
+    color: var(--subtext)
+    .browse-inventory
+      display: none
+
+  .inventory-summary
+    border-top: 1px solid var(--border)
+    > div
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 9px 0
+      border-bottom: 1px solid var(--border)
+      font-size: 13px
+      width: auto
+    dt
+      display: flex
+      align-items: center
+      gap: 8px
+    dd
+      font-variant-numeric: tabular-nums
+      color: var(--text)
+    .protocol-count dt
+      font: 12px var(--font-code)
+      color: var(--subtext)
+
+  .recording-note p
+    color: var(--subtext)
+    font-size: 13px
+    line-height: 1.65
+
+  .overview-links
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 4px
+    margin-top: 12px
+    button
+      display: flex
+      align-items: center
+      gap: 6px
+      padding: 4px 0
+      border: 0
+      background: transparent
+      color: var(--text)
+      font: inherit
+      font-size: 13px
+      cursor: pointer
+      &:hover
+        text-decoration: underline
+        text-underline-offset: 3px
+
+  @media (max-width: 1100px)
+    .overview-grid
+      grid-template-columns: minmax(0, 1fr)
+      gap: 40px
+
+  @media (max-width: 768px)
+    .host-group, .host-meta, .host-connect
+      display: none
+    .host-state
+      width: auto
+    .overview-footnote
+      > span, > svg
+        display: none
+      .browse-inventory
+        display: flex
+        align-items: center
+        gap: 6px
+        border: 1px solid var(--border-strong)
+        background: var(--surface)
+        color: var(--text)
+        padding: 8px 12px
+        font: inherit
+        font-size: 13px

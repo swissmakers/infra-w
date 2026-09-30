@@ -1,0 +1,2051 @@
+{
+  "common": {
+    "error": "Errore",
+    "success": "Il successo",
+    "loading": "Caricamento...",
+    "saving": "Risparmiare...",
+    "close": "Chiudi",
+    "save": "Risparmia",
+    "download": "Scarica",
+    "maximize": "Massimizza",
+    "restore": "Ripristino",
+    "branding": {
+      "by": "di"
+    },
+    "actions": {
+      "cancel": "Annullamento",
+      "confirm": "Confermare",
+      "login": "Accesso",
+      "register": "Registro",
+      "save": "Risparmia",
+      "download": "Scarica",
+      "close": "Chiudi",
+      "restore": "Ripristino",
+      "back": "Indietro",
+      "delete": "Elimina",
+      "done": "Fatto"
+    },
+    "iconChooser": {
+      "searchIcons": "Ricerca icone...",
+      "searchResults": "Risultati della ricerca",
+      "popularIcons": "Icone popolari",
+      "noResults": "Nessuna icona trovata"
+    },
+    "labels": {
+      "username": "Nome utente",
+      "password": "Password",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "twoFACode": "Codice 2FA"
+    },
+    "placeholders": {
+      "username": "Nome utente",
+      "password": "Password",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "code": "Codice"
+    },
+    "confirmDialog": {
+      "title": "Sei sicuro?",
+      "defaultText": "Questa azione non può essere annullata.",
+      "unsavedChangesTitle": "Modifiche non salvate",
+      "unsavedChangesText": "Le modifiche non sono state salvate. Sei sicuro di voler chiudere?",
+      "keepEditing": "Continua la modifica",
+      "closeWithoutSaving": "Chiudi senza salvare"
+    },
+    "loginDialog": {
+      "title": "INFRA-W",
+      "registrationTitle": "Registrazione",
+      "ssoOrContinueWith": "oppure continua con",
+      "noAuthMethodsAvailable": "Non sono disponibili metodi di autenticazione.",
+      "signInWithPasskey": "Accedi con Passkey",
+      "authenticating": "Autenticazione..."
+    },
+    "selectBox": {
+      "defaultOption": "Seleziona un'opzione...",
+      "search": "Cerca...",
+      "noResults": "Nessun risultato trovato"
+    },
+    "userSearch": {
+      "placeholder": "Cerca un utente..."
+    },
+    "table": {
+      "noData": {
+        "title": "Nessun dato trovato",
+        "subtitle": "Non ci sono articoli da visualizzare."
+      },
+      "pagination": {
+        "showing": "Mostra da {{start}} a {{end}} di {{total}}",
+        "previous": "Precedente",
+        "next": "Avanti",
+        "pageInfo": "Pagina {{current}} di {{total}}"
+      }
+    },
+    "sidebar": {
+      "settings": "Impostazioni",
+      "snippets": "Frammenti",
+      "audit": "Audit",
+      "account": "Conto",
+      "logout": "Disconnessione",
+      "logoutConfirmText": "In questo modo uscirai dall'account di {{username}} . Sei sicuro?"
+    },
+    "quickAction": {
+      "placeholder": "Cerca server, snippet o naviga...",
+      "noResults": "Nessun risultato trovato",
+      "navigation": "Navigazione",
+      "settings": "Impostazioni",
+      "navigate": "Navigare",
+      "select": "Seleziona",
+      "close": "Chiudi",
+      "types": {
+        "server": "Server",
+        "snippet": "Snippet",
+        "navigation": "Vai a",
+        "settings": "Impostazioni"
+      }
+    },
+    "errors": {
+      "loadingAuthProviders": "Errore nel caricamento dei provider di autenticazione: {{error}}",
+      "webSocketConnection": {
+        "title": "Connessione WebSocket fallita",
+        "message": "Le connessioni non sono disponibili. Questo potrebbe essere dovuto al fatto che WebSocket non è abilitato nel tuo reverse proxy o a restrizioni di rete."
+      },
+      "generalError": "Si è verificato un errore",
+      "invalidCredentials": "Nome utente o password non validi",
+      "invalidTwoFactor": "Codice a due fattori non valido",
+      "internalAuthDisabled": "L'autenticazione interna è disabilitata",
+      "ssoLoginFailed": "Impossibile avviare il login SSO",
+      "passkeyLoginFailed": "L'autenticazione tramite passkey è fallita",
+      "passkeyCancelled": "L'autenticazione tramite passkey è stata annullata",
+      "accountLocked": "Questo account è bloccato. Chiedi a un amministratore di sbloccarlo."
+    },
+    "messages": {
+      "invitationAccepted": "Invito accettato",
+      "invitationDeclined": "Invito rifiutato",
+      "invitationError": "Non è stato possibile elaborare l'invito",
+      "organizationDeleted": "Organizzazione cancellata con successo",
+      "organizationDeleteError": "Impossibile eliminare l'organizzazione",
+      "leftOrganization": "Hai lasciato l'organizzazione",
+      "leaveOrganizationError": "Non è riuscito a lasciare l'organizzazione"
+    },
+    "warning": "Avviso",
+    "info": "Informazione",
+    "notifications": "Notifiche",
+    "errorPage": {
+      "notFoundTitle": "Pagina non trovata",
+      "notFoundText": "La pagina che cerchi non esiste o è stata spostata.",
+      "errorTitle": "Qualcosa è andato storto",
+      "errorText": "Si è verificato un errore imprevisto. Aggiorna la pagina o torna all'area di lavoro.",
+      "refresh": "Aggiorna pagina",
+      "home": "Vai all'area di lavoro",
+      "copyError": "Copia errore",
+      "copied": "Copiato"
+    },
+    "requestErrors": {
+      "network": "Errore di rete",
+      "cancelled": "Caricamento annullato",
+      "timeout": "Tempo di caricamento scaduto",
+      "status": "Richiesta non riuscita (HTTP {{status}})"
+    },
+    "hints": {
+      "password": "Almeno {{count}} caratteri."
+    },
+    "impersonation": {
+      "banner": "Stai lavorando come {{user}} per conto di {{admin}}.",
+      "return": "Torna al mio account"
+    },
+    "copied": "Copiato negli appunti",
+    "copyFailed": "Impossibile copiare negli appunti"
+  },
+  "audit": {
+    "page": {
+      "title": "Registri di controllo",
+      "subtitle": "Traccia e monitora tutte le attività della tua infrastruttura"
+    },
+    "errors": {
+      "failedToLoadData": "Non è riuscito a caricare i dati di audit",
+      "failedToLoadLogs": "Non è riuscito a caricare i log di audit"
+    },
+    "filters": {
+      "organization": "Organizzazione",
+      "action": "Azione",
+      "actor": "Attore",
+      "startDate": "Data di inizio",
+      "endDate": "Data di fine",
+      "clearAll": "Cancella tutto",
+      "options": {
+        "allActions": "Tutte le azioni",
+        "allOrganizations": "Tutte",
+        "personalOnly": "Solo personale",
+        "allActors": "Tutti gli attori",
+        "allActivities": "Tutte le attività"
+      },
+      "activity": "Attività"
+    },
+    "table": {
+      "headers": {
+        "timestamp": "Data e ora",
+        "action": "Azione",
+        "actor": "Attore",
+        "resource": "Risorse",
+        "organization": "Organizzazione",
+        "details": "Dettagli"
+      },
+      "noLogs": {
+        "title": "Non sono stati trovati log di audit",
+        "subtitle": "Prova a regolare i filtri o torna a controllare più tardi."
+      },
+      "expandedDetails": {
+        "connectionReason": "Motivo della connessione",
+        "userAgent": "Agente utente",
+        "additionalDetails": "Dettagli aggiuntivi"
+      },
+      "badges": {
+        "personal": "Personale",
+        "user": "Utente #{{id}}",
+        "organization": "Org #{{id}}"
+      },
+      "replayRecording": "Riproduci registrazione della sessione"
+    },
+    "categories": {
+      "connections": "Connessioni ai server",
+      "files": "Operazioni sui file",
+      "servers": "Gestione dei server",
+      "identities": "Gestione delle identità",
+      "passwords": "Incolla password",
+      "folders": "Gestione delle cartelle",
+      "scripts": "Esecuzione di script",
+      "signIn": "Accesso",
+      "administration": "Amministrazione"
+    },
+    "actions": {
+      "entry": {
+        "ssh_connect": "Connessione SSH",
+        "sftp_connect": "Connessione SFTP",
+        "pve_connect": "Connessione Proxmox",
+        "rdp_connect": "Connessione RDP",
+        "vnc_connect": "Connessione VNC",
+        "create": "Server creato",
+        "update": "Server modificato",
+        "delete": "Server eliminato",
+        "telnet_connect": "Connessione Telnet",
+        "share_start": "Sessione condivisa",
+        "share_stop": "Condivisione terminata",
+        "share_update": "Permessi della condivisione modificati",
+        "power": "Azione di alimentazione VM",
+        "wake": "Wake-on-LAN inviato"
+      },
+      "file": {
+        "upload": "File caricato",
+        "download": "File scaricato",
+        "create": "File creato",
+        "delete": "File eliminato",
+        "rename": "File rinominato",
+        "chmod": "Permessi modificati"
+      },
+      "folder": {
+        "create": "Cartella creata",
+        "delete": "Cartella eliminata",
+        "download": "Cartella scaricata"
+      },
+      "identity": {
+        "create": "Identità creata",
+        "update": "Identità modificata",
+        "delete": "Identità eliminata",
+        "credentials_access": "Password incollata"
+      },
+      "folder_mgmt": {
+        "create": "Cartella dell'inventario creata",
+        "update": "Cartella dell'inventario modificata",
+        "delete": "Cartella dell'inventario eliminata"
+      },
+      "script": {
+        "execute": "Script eseguito"
+      },
+      "auth": {
+        "sign_in": "Accesso effettuato",
+        "sign_in_failed": "Accesso non riuscito",
+        "sign_out": "Disconnesso",
+        "impersonate": "Accesso come utente",
+        "session_revoke": "Dispositivo disconnesso da un amministratore",
+        "token_create": "Token API creato",
+        "token_revoke": "Token API revocato"
+      },
+      "account": {
+        "create": "Utente creato",
+        "delete": "Utente eliminato",
+        "role_change": "Ruolo modificato",
+        "password_change": "Password modificata",
+        "password_reset": "Password reimpostata",
+        "lock": "Account bloccato",
+        "unlock": "Account sbloccato",
+        "mfa_reset": "Autenticazione a due fattori reimpostata"
+      },
+      "organization": {
+        "member_invite": "Membro invitato",
+        "member_join": "Invito accettato",
+        "member_remove": "Membro rimosso",
+        "update": "Organizzazione modificata",
+        "transfer": "Proprietà trasferita",
+        "delete": "Organizzazione eliminata",
+        "member_role": "Ruolo di un membro cambiato"
+      },
+      "auth_provider": {
+        "create": "Metodo di accesso aggiunto",
+        "update": "Metodo di accesso modificato",
+        "delete": "Metodo di accesso eliminato"
+      },
+      "settings": {
+        "update": "Impostazioni di sistema modificate"
+      },
+      "backup": {
+        "create": "Backup creato",
+        "restore": "Backup ripristinato",
+        "database_download": "Database scaricato"
+      },
+      "audit": {
+        "export": "Registro di audit esportato"
+      },
+      "host_key": {
+        "trust": "Chiave host attendibile (primo utilizzo)",
+        "mismatch": "Chiave host cambiata rifiutata",
+        "accept": "Chiave host cambiata accettata",
+        "forget": "Chiave host dimenticata"
+      },
+      "integration": {
+        "removals_apply": "Rimozioni di integrazione trattenute applicate"
+      }
+    },
+    "player": {
+      "title": "Registrazione della sessione",
+      "loading": "Caricamento della registrazione...",
+      "failed": "Impossibile riprodurre la registrazione.",
+      "play": "Riproduci registrazione",
+      "pause": "Metti in pausa la registrazione",
+      "back": "Indietro di 10 secondi",
+      "forward": "Avanti di 10 secondi",
+      "enterFullscreen": "Schermo intero",
+      "exitFullscreen": "Esci da schermo intero"
+    },
+    "detailKeys": {
+      "name": "Nome",
+      "folderId": "ID cartella",
+      "folderName": "Cartella",
+      "folderPath": "Percorso cartella",
+      "filePath": "Percorso file",
+      "fileSize": "Dimensione file",
+      "oldPath": "Percorso precedente",
+      "newPath": "Nuovo percorso",
+      "destination": "Destinazione",
+      "mode": "Permessi",
+      "username": "Nome utente",
+      "accountId": "ID account",
+      "role": "Ruolo",
+      "method": "Metodo",
+      "reason": "Motivo",
+      "fields": "Campi modificati",
+      "updatedFields": "Campi modificati",
+      "type": "Tipo",
+      "protocol": "Protocollo",
+      "providerId": "ID archiviazione",
+      "power": "Azione di alimentazione",
+      "macAddress": "Indirizzo MAC",
+      "writable": "Gli spettatori possono digitare",
+      "left": "Ha lasciato l'organizzazione",
+      "endedImpersonation": "\"Accedi come\" terminato",
+      "sessionDuration": "Durata della sessione",
+      "recordingType": "Tipo di registrazione",
+      "hasRecording": "Registrato",
+      "recordingDeletedAt": "Registrazione eliminata",
+      "identityName": "Identità",
+      "identityType": "Tipo di identità",
+      "importSource": "Importato da",
+      "serverId": "ID server",
+      "scope": "Accesso",
+      "targetOrganizationId": "Organizzazione di destinazione",
+      "targetId": "ID di destinazione",
+      "placement": "Posizione",
+      "action": "Azione",
+      "sources": "Elementi spostati o copiati",
+      "rows": "Voci",
+      "filters": "Filtri",
+      "totp": "App di autenticazione rimossa",
+      "passkeys": "Passkey rimosse",
+      "sessionId": "ID sessione",
+      "host": "Host",
+      "port": "Porta",
+      "keyType": "Tipo di chiave",
+      "fingerprint": "Impronta",
+      "trustedKeyType": "Tipo di chiave attendibile",
+      "trustedFingerprint": "Impronta attendibile",
+      "previous": "Impronta precedente",
+      "previousRole": "Ruolo precedente",
+      "organizationsTransferred": "Organizzazioni trasferite",
+      "organizationsDeleted": "Organizzazioni eliminate",
+      "apiToken": "Token API",
+      "expiresAt": "Scadenza",
+      "webhook": "Webhook",
+      "webhookEvents": "Eventi del webhook",
+      "webhookSecretChanged": "Segreto di firma cambiato",
+      "deleted": "Rimossi",
+      "broadcast": "Indirizzo broadcast"
+    },
+    "export": {
+      "button": "Esporta CSV",
+      "failed": "Impossibile esportare il registro di audit."
+    },
+    "retention": {
+      "label": "Conserva le voci",
+      "forever": "Per sempre",
+      "days_one": "{{count}} giorno",
+      "days_other": "{{count}} giorni",
+      "years_one": "{{count}} anno",
+      "years_other": "{{count}} anni",
+      "saved": "Le voci di audit vengono conservate per: {{period}}.",
+      "confirm": "Conservare le voci di audit per {{period}}? Le voci più vecchie vengono eliminate definitivamente ora e ogni giorno da adesso in poi. Esportale prima se ti servono."
+    }
+  },
+  "snippets": {
+    "page": {
+      "title": "Frammenti",
+      "subtitle": "Gestisci i tuoi snippet di comando per accedervi rapidamente nei terminali",
+      "addSnippet": "Aggiungi Snippet",
+      "personal": "Personale",
+      "tabs": {
+        "snippets": "Frammenti"
+      },
+      "searchPlaceholder": "Cerca…",
+      "noMatch": "Nessun risultato per la ricerca.",
+      "searchLabel": "Cerca nome, descrizione o codice"
+    },
+    "list": {
+      "empty": "Non hai ancora nessuno snippet. Crea il tuo primo!",
+      "actions": {
+        "edit": "Modifica lo snippet",
+        "delete": "Elimina lo snippet"
+      },
+      "confirmDelete": "Eliminare lo snippet \"{{name}}\"?"
+    },
+    "dialog": {
+      "title": {
+        "create": "Crea Snippet",
+        "edit": "Modifica Snippet"
+      },
+      "fields": {
+        "name": "Nome",
+        "description": "Descrizione (opzionale)",
+        "command": "Comando",
+        "osFilter": "Sistema operativo compatibile"
+      },
+      "placeholders": {
+        "name": "Nome dello snippet",
+        "description": "Cosa comanda questo?",
+        "command": "Inserisci il tuo comando",
+        "osFilter": "Tutti i sistemi operativi"
+      },
+      "actions": {
+        "cancel": "Annullamento",
+        "create": "Crea",
+        "save": "Risparmia"
+      }
+    },
+    "messages": {
+      "success": {
+        "created": "Snippet creato con successo",
+        "updated": "Snippet aggiornato con successo",
+        "deleted": "Snippet cancellato con successo"
+      },
+      "errors": {
+        "required": "Il nome e il comando sono obbligatori",
+        "loadFailed": "Non è riuscito a caricare i dati dello snippet",
+        "saveFailed": "Non è riuscito a salvare lo snippet",
+        "deleteFailed": "Cancellazione fallita dello snippet",
+        "reorderFailed": "Non è riuscito a riordinare lo snippet"
+      }
+    }
+  },
+  "scripts": {
+    "page": {
+      "subtitle": "Gestisci gli script di automazione per le attività del server",
+      "addScript": "Aggiungi script",
+      "tabs": {
+        "scripts": "Script"
+      }
+    },
+    "execution": {
+      "progressPanel": {
+        "steps": "Passi"
+      },
+      "status": {
+        "running": "In corsa",
+        "completed": "Completato",
+        "error": "Errore"
+      }
+    },
+    "list": {
+      "empty": "Non hai ancora alcuno script. Crea il tuo primo!",
+      "actions": {
+        "edit": "Modifica lo script",
+        "delete": "Cancella lo script"
+      },
+      "confirmDelete": "Eliminare lo script \"{{name}}\"?"
+    },
+    "dialog": {
+      "title": {
+        "create": "Crea script",
+        "edit": "Modifica script"
+      },
+      "scriptDetails": "Dettagli dello script",
+      "scriptContent": "Contenuto della sceneggiatura",
+      "helpTip": "Usa le direttive @INFRA-W: per le funzioni interattive",
+      "fields": {
+        "name": "Nome",
+        "description": "Descrizione",
+        "osFilter": "Sistema operativo compatibile"
+      },
+      "placeholders": {
+        "name": "Nome dello script",
+        "description": "Cosa fa questo script?",
+        "osFilter": "Tutti i sistemi operativi"
+      },
+      "actions": {
+        "cancel": "Annullamento",
+        "create": "Crea",
+        "update": "Aggiornamento",
+        "creating": "Creare...",
+        "updating": "Aggiornamento..."
+      },
+      "errors": {
+        "nameRequired": "Il nome dello script è obbligatorio",
+        "descriptionRequired": "La descrizione dello script è necessaria",
+        "contentRequired": "Il contenuto della sceneggiatura è necessario",
+        "createFailed": "Impossibile creare lo script",
+        "updateFailed": "Non è riuscito ad aggiornare lo script"
+      }
+    },
+    "messages": {
+      "success": {
+        "created": "Lo script è stato creato con successo",
+        "updated": "Lo script è stato aggiornato con successo",
+        "deleted": "Lo script è stato cancellato con successo"
+      },
+      "errors": {
+        "loadFailed": "Non è riuscito a caricare i dati dello script",
+        "deleteFailed": "Cancellazione dello script fallita",
+        "reorderFailed": "Non è riuscito a riordinare lo script"
+      }
+    },
+    "menu": {
+      "searchPlaceholder": "Ricerca script...",
+      "noScripts": "Non ci sono script disponibili. Creane qualcuno nella sezione Script.",
+      "noMatch": "Nessun script corrisponde alla tua ricerca.",
+      "selectIdentity": "Seleziona l'identità"
+    },
+    "run": {
+      "title": "Esegui su un host",
+      "titleFor": "Esegui {{name}} su un host",
+      "searchPlaceholder": "Cerca host…",
+      "noHosts": "Nessun host è adatto a questo script. Gli script vengono eseguiti su host SSH con un’identità, nell’organizzazione dello script e con un sistema operativo corrispondente."
+    }
+  },
+  "settings": {
+    "pages": {
+      "account": "Conto",
+      "terminal": "Terminale",
+      "fileManager": "Gestore di file",
+      "keymaps": "Mappe chiave",
+      "identities": "Identità",
+      "sessions": "Dispositivi connessi",
+      "organizations": "Organizzazioni",
+      "users": "Utenti",
+      "authentication": "Autenticazione",
+      "integrations": "Integrazioni",
+      "monitoring": "Controlli di stato",
+      "backup": "Immagazzinamento",
+      "preferences": "Preferenze",
+      "hostKeys": "Chiavi host",
+      "apiTokens": "Token API",
+      "notifications": "Notifiche"
+    },
+    "account": {
+      "accountName": "Nome del conto",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "twoFactor": "Autenticazione a due fattori",
+      "twoFactorActive": "Attivo",
+      "twoFactorInactive": "Inattivo",
+      "twoFactorDescription": "Aggiungi un ulteriore livello di sicurezza al tuo account abilitando l'autenticazione a due fattori.",
+      "enable2FA": "Abilita la 2FA",
+      "disable2FA": "Disabilita la 2FA",
+      "changePassword": "Cambia la password",
+      "changePasswordDescription": "Scegli una nuova password sicura per il tuo account.",
+      "changePasswordButton": "Cambia la password",
+      "twoFactorDialog": {
+        "title": "Abilita la 2FA",
+        "description": "Scansiona il codice con la tua app Autenticatore o inseriscilo <span class=\"totp-code\">{{secret}}</span> manualmente.",
+        "codePlaceholder": "Inserisci il codice 2FA",
+        "enableButton": "Abilitazione"
+      },
+      "passkeys": {
+        "sectionTitle": "Passkeys",
+        "sectionDescription": "Usa i passkeys per un accesso più veloce e sicuro senza password.",
+        "addButton": "Aggiungi una chiave di accesso",
+        "addDialogTitle": "Aggiungi una chiave di accesso",
+        "addDialogDescription": "Dai un nome alla tua chiave d'accesso per poterla identificare in seguito.",
+        "namePlaceholder": "Nome della chiave d'accesso",
+        "defaultName": "Il mio passepartout",
+        "confirmDelete": "Sei sicuro di voler cancellare questa chiave di accesso?",
+        "createdAt": "Creato {{date}}",
+        "registerError": "La registrazione della chiave d'accesso è fallita. Riprova.",
+        "noPasskeys": "Non ci sono ancora passepartout registrati",
+        "rename": "Rinomina",
+        "delete": "Elimina"
+      },
+      "signInSecurity": "Sicurezza dell'accesso"
+    },
+    "passwordChange": {
+      "title": "Cambia la password",
+      "description": "Usa almeno 12 caratteri. Dopo la modifica gli altri dispositivi vengono disconnessi.",
+      "newPassword": "Nuova password",
+      "confirmPassword": "Conferma la nuova password",
+      "changePasswordButton": "Cambia la password",
+      "resetDescription": "L'utente viene disconnesso su tutti i dispositivi e accede con la nuova password.",
+      "currentPassword": "Password attuale",
+      "tooShort": "La nuova password deve avere almeno {{count}} caratteri.",
+      "mismatch": "Le password non corrispondono.",
+      "success": "Password modificata. Gli altri dispositivi sono stati disconnessi.",
+      "resetSuccess": "Password reimpostata. L'utente è stato disconnesso su tutti i dispositivi."
+    },
+    "organizations": {
+      "createOrganization": "Crea un'organizzazione",
+      "noOrganizations": "Non hai ancora nessuna organizzazione.",
+      "noOrganizationsDescription": "Creane uno per iniziare a collaborare con il tuo team.",
+      "invite": "Invita",
+      "delete": "Elimina",
+      "leave": "Lascia",
+      "members": "Membri",
+      "auditSettings": "Impostazioni di verifica",
+      "pendingInvitations": "Inviti in sospeso",
+      "invitedBy": "Invitato da: {{name}}",
+      "deleteConfirmation": "Elimina definitivamente l’organizzazione con server, cartelle, identità, snippet, script e integrazioni, e rimuove tutti i membri. L’operazione non può essere annullata.",
+      "leaveConfirmation": "Sei sicuro di voler lasciare questa organizzazione?",
+      "dialog": {
+        "title": "Crea un'organizzazione",
+        "fields": {
+          "name": "Nome",
+          "namePlaceholder": "Nome dell'organizzazione",
+          "description": "Descrizione (opzionale)",
+          "descriptionPlaceholder": "Breve descrizione della tua organizzazione"
+        },
+        "actions": {
+          "cancel": "Annullamento",
+          "create": "Crea"
+        },
+        "messages": {
+          "nameRequired": "Il nome dell'organizzazione è obbligatorio",
+          "createSuccess": "Organizzazione creata con successo",
+          "createFailed": "Impossibile creare un'organizzazione",
+          "updateSuccess": "Organizzazione aggiornata.",
+          "updateFailed": "Impossibile aggiornare l’organizzazione."
+        },
+        "editTitle": "Modifica organizzazione"
+      },
+      "roles": {
+        "owner": "Proprietario",
+        "member": "Membro",
+        "manager": "Gestore"
+      },
+      "invitationPending": "Invito in sospeso",
+      "memberRemoved": "Membro rimosso",
+      "memberRemoveFailed": "Impossibile rimuovere il membro",
+      "removeMemberConfirm": "Rimuovere {{name}} da questa organizzazione?",
+      "inviteDialog": {
+        "title": "Invita membro",
+        "subtitle": "Invita un utente a unirsi a {{name}}.",
+        "username": "Nome utente",
+        "placeholder": "Cerca un utente…",
+        "send": "Invia invito",
+        "sent": "Invito inviato",
+        "failed": "Impossibile inviare l'invito",
+        "usernameRequired": "Inserisci un nome utente"
+      },
+      "audit": {
+        "save": "Salva impostazioni",
+        "saved": "Impostazioni di audit salvate",
+        "saveFailed": "Impossibile salvare le impostazioni di audit",
+        "loadFailed": "Impossibile caricare le impostazioni di audit",
+        "groups": {
+          "recording": {
+            "title": "Registrazione delle sessioni",
+            "description": "Registra le sessioni di terminale e desktop remoto per riprodurle."
+          },
+          "connection": {
+            "title": "Requisiti di connessione",
+            "description": "Definisci cosa devono fornire gli utenti prima di connettersi."
+          },
+          "activity": {
+            "title": "Registro attività",
+            "description": "Scegli quali attività vengono scritte nel registro di audit."
+          },
+          "sharing": {
+            "title": "Condivisione delle sessioni",
+            "description": "I link di condivisione permettono a persone senza account di guardare una sessione sui server di questa organizzazione."
+          }
+        },
+        "enableSessionRecording": {
+          "title": "Registra sessioni",
+          "description": "Registra le sessioni SSH, Telnet, RDP e VNC per riprodurle in seguito."
+        },
+        "recordingRetentionDays": {
+          "title": "Conservazione delle registrazioni (giorni)",
+          "description": "Per quanto tempo le registrazioni vengono conservate prima dell'eliminazione automatica (1-365 giorni)."
+        },
+        "requireConnectionReason": {
+          "title": "Richiedi motivo di connessione",
+          "description": "Gli utenti devono indicare un motivo prima di connettersi a un server."
+        },
+        "enableFileOperationAudit": {
+          "title": "Operazioni sui file",
+          "description": "Caricamenti, download, eliminazioni e rinomine tramite SFTP."
+        },
+        "enableServerConnectionAudit": {
+          "title": "Connessioni ai server",
+          "description": "Connessioni e disconnessioni SSH, SFTP e Proxmox."
+        },
+        "enableIdentityManagementAudit": {
+          "title": "Gestione delle identità",
+          "description": "Creazione, modifica ed eliminazione delle identità."
+        },
+        "enableIdentityCredentialsAccessAudit": {
+          "title": "Incolla password",
+          "description": "Utilizzo dell'azione di incollatura della password."
+        },
+        "enableServerManagementAudit": {
+          "title": "Gestione dei server",
+          "description": "Creazione, modifica ed eliminazione delle configurazioni dei server."
+        },
+        "enableFolderManagementAudit": {
+          "title": "Gestione delle cartelle",
+          "description": "Creazione, modifica ed eliminazione delle cartelle."
+        },
+        "enableScriptExecutionAudit": {
+          "title": "Esecuzione di script",
+          "description": "Esecuzione di script e attività di automazione."
+        },
+        "allowSessionSharing": {
+          "title": "Consenti link di condivisione",
+          "description": "I membri possono condividere le proprie sessioni tramite un link."
+        },
+        "allowWritableSharing": {
+          "title": "Consenti digitazione tramite link",
+          "description": "Gli spettatori possono essere autorizzati a digitare; disattivato, i link sono sempre in sola lettura."
+        },
+        "shareMaxHours": {
+          "title": "Durata massima dei link (ore)",
+          "description": "I link smettono di funzionare al più tardi dopo questo tempo (1–168 ore)."
+        }
+      },
+      "removeMember": "Rimuovi membro",
+      "acceptInvitation": "Accetta invito",
+      "declineInvitation": "Rifiuta invito",
+      "edit": "Modifica organizzazione",
+      "makeManager": "Nomina gestore",
+      "makeMember": "Rendi membro",
+      "makeManagerFor": "Nomina {{name}} gestore",
+      "makeMemberFor": "Rendi {{name}} membro",
+      "transferOwnership": "Trasferisci la proprietà",
+      "transferOwnershipTo": "Trasferisci la proprietà a {{name}}",
+      "transferConfirm": "Rendere {{name}} proprietario di questa organizzazione? Diventi gestore e non puoi più eliminarla né cambiare i ruoli.",
+      "ownershipTransferred": "La proprietà è stata trasferita.",
+      "transferFailed": "Impossibile trasferire la proprietà.",
+      "roleChanged": "Il ruolo è stato cambiato.",
+      "roleChangeFailed": "Impossibile cambiare il ruolo.",
+      "removeMemberFor": "Rimuovi {{name}}",
+      "exportAudit": "Esporta registro di audit",
+      "exportAuditFor": "Esporta il registro di audit di {{name}}"
+    },
+    "users": {
+      "title": "{{count}} utenti",
+      "createNewUser": "Crea un nuovo utente",
+      "searchPlaceholder": "Ricerca utenti...",
+      "twoFactorEnabled": "2FA abilitato",
+      "twoFactorDisabled": "2FA disattivato",
+      "noUsers": "Nessun utente trovato",
+      "noUsersDescription": "Crea un nuovo utente per iniziare.",
+      "noSearchResults": "Nessun utente trovato",
+      "noSearchResultsDescription": "Prova a modificare la tua query di ricerca.",
+      "table": {
+        "user": "Utente",
+        "role": "Ruolo",
+        "twoFactor": "2FA",
+        "actions": "Azioni utente"
+      },
+      "roles": {
+        "admin": "Admin",
+        "user": "Utente"
+      },
+      "contextMenu": {
+        "changePassword": "Cambia la password",
+        "promoteToAdmin": "Promuovi ad amministratore",
+        "demoteToUser": "Retrocessione a utente",
+        "deleteUser": "Elimina l'utente",
+        "loginAsUser": "Accedi come utente",
+        "deleteConfirm": "Elimina definitivamente l’utente e tutti i dati personali. Le organizzazioni di sua proprietà passano a un gestore o al membro più anziano; un’organizzazione di cui è l’unico membro viene eliminata.",
+        "promoteConfirm": "In questo modo l'utente verrà promosso ad amministratore.",
+        "demoteConfirm": "In questo modo l'utente verrà declassato a utente normale.",
+        "loginAsConfirm": "Accedere come {{name}}? Lavori come questo utente finché non torni al tuo account. L'operazione viene registrata nel log di audit.",
+        "lockUser": "Blocca account",
+        "unlockUser": "Sblocca account",
+        "lockConfirm": "Bloccare {{name}}? L’account viene disconnesso ovunque e non può accedere finché non viene sbloccato. I suoi dati vengono conservati.",
+        "unlockConfirm": "Sbloccare {{name}}? L’account può accedere di nuovo.",
+        "resetSecondFactor": "Reimposta l’autenticazione a due fattori",
+        "resetSecondFactorConfirm": "Reimpostare l’autenticazione a due fattori di {{name}}? La configurazione dell’app di autenticazione e tutte le passkey vengono rimosse; l’utente può configurarne di nuove dopo aver effettuato l’accesso con la password."
+      },
+      "locked": "Bloccato",
+      "passkeys_one": "{{count}} passkey",
+      "passkeys_other": "{{count}} passkey",
+      "messages": {
+        "locked": "{{name}} è bloccato.",
+        "unlocked": "{{name}} è sbloccato.",
+        "secondFactorReset": "L’autenticazione a due fattori di {{name}} è stata reimpostata."
+      },
+      "sessions": {
+        "title": "Dispositivi connessi",
+        "description": "Tutti i browser connessi a questa istanza. Disconnettere un dispositivo termina la sua sessione; l’utente può accedere di nuovo, a meno che l’account non sia bloccato.",
+        "empty": "Nessuno ha effettuato l’accesso.",
+        "signedOut": "Il dispositivo è stato disconnesso.",
+        "openedBy": "Aperta da {{name}} con «Accedi come»",
+        "deletedAccount": "Account eliminato"
+      },
+      "tokens": {
+        "title": "Token API",
+        "description": "Token di tutti gli utenti. Un token revocato smette subito di funzionare, come quelli degli account bloccati.",
+        "empty": "Nessuno ha creato un token API."
+      }
+    },
+    "userDialog": {
+      "title": "Crea un nuovo utente",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "username": "Nome utente",
+      "password": "Password",
+      "firstNamePlaceholder": "Nome",
+      "lastNamePlaceholder": "Cognome",
+      "usernamePlaceholder": "Nome utente",
+      "passwordPlaceholder": "Password",
+      "create": "Crea",
+      "errorOccurred": "Si è verificato un errore"
+    },
+    "sessions": {
+      "lastActivity": "Ultima attività: {{date}} da {{ip}}",
+      "currentSession": "Sessione in corso",
+      "logout": "Esci",
+      "revoke": "Disconnetti",
+      "browserOn": "{{browser}} {{version}} su {{os}} {{osVersion}}",
+      "signedIn": "Accesso: {{date}}",
+      "signOutOthers": "Disconnetti tutti gli altri dispositivi",
+      "othersSignedOut_one": "{{count}} altro dispositivo disconnesso.",
+      "othersSignedOut_other": "{{count}} altri dispositivi disconnessi."
+    },
+    "keymaps": {
+      "resetAll": "Azzera tutto",
+      "actions": {
+        "search": {
+          "title": "Ricerca",
+          "description": "Apri l'input di ricerca"
+        },
+        "quickaction": {
+          "title": "Azione rapida",
+          "description": "Apri il menu delle azioni rapide"
+        },
+        "snippets": {
+          "title": "Frammenti",
+          "description": "Apri la finestra di dialogo dei frammenti"
+        },
+        "keyboardshortcuts": {
+          "title": "Scorciatoie da tastiera",
+          "description": "Apri il menu delle scorciatoie da tastiera"
+        },
+        "broadcast": {
+          "title": "Modalità Broadcast",
+          "description": "Alterna la modalità di trasmissione quando usi la vista divisa"
+        },
+        "copy": {
+          "title": "Copia",
+          "description": "Copia il testo selezionato negli appunti"
+        },
+        "fullscreen": {
+          "title": "Schermo intero",
+          "description": "Attiva la modalità a schermo intero"
+        }
+      },
+      "recorder": {
+        "pressKeys": "Premi i tasti… (Esc per annullare)",
+        "save": "Risparmia",
+        "cancel": "Annullamento",
+        "reset": "Azzeramento"
+      },
+      "messages": {
+        "updateSuccess": "Keybind aggiornato con successo",
+        "updateFailed": "Aggiornamento fallito del keybind",
+        "resetSuccess": "Ripristino del Keybind ai valori predefiniti",
+        "resetFailed": "Fallito il reset del keybind",
+        "resetAllSuccess": "Tutte le combinazioni di tasti vengono ripristinate ai valori predefiniti",
+        "resetAllFailed": "Impossibile reimpostare i keybinds"
+      },
+      "enable": "Attiva {{name}}"
+    },
+    "terminal": {
+      "title": "Terminale",
+      "font": {
+        "title": "Carattere",
+        "description": "Personalizza la famiglia e la dimensione dei caratteri per il tuo terminale.",
+        "fontFamily": "Famiglia di caratteri",
+        "fontSize": "Dimensione del carattere"
+      },
+      "cursor": {
+        "title": "Cursore",
+        "description": "Personalizza l'aspetto e il comportamento del cursore del tuo terminale.",
+        "cursorStyle": "Stile del cursore",
+        "cursorBlinking": "Cursore lampeggiante",
+        "enabled": "Abilitato",
+        "disabled": "Disabili",
+        "styles": {
+          "block": "Blocco",
+          "underline": "Sottolineato",
+          "bar": "Barra"
+        }
+      },
+      "theme": {
+        "title": "Tema",
+        "description": "Scegli un tema cromatico per il tuo terminale.",
+        "default": "Predefinito"
+      },
+      "preview": {
+        "text": "$ echo 'Ciao, INFRA-W!'\nCiao, INFRA-W!\n$ "
+      }
+    },
+    "fileManager": {
+      "defaultView": {
+        "title": "Modalità di visualizzazione predefinita",
+        "description": "Scegli il layout predefinito all'apertura del file manager.",
+        "list": "Vista elenco",
+        "grid": "Vista griglia"
+      },
+      "thumbnails": {
+        "title": "Miniature delle immagini",
+        "description": "Mostra le anteprime delle immagini nella vista a griglia. Questo utilizza una larghezza di banda aggiuntiva per generare le anteprime."
+      },
+      "hiddenFiles": {
+        "title": "File nascosti",
+        "description": "Controlla la visibilità dei file e delle cartelle nascoste (nomi che iniziano con un punto)."
+      },
+      "deleteConfirmation": {
+        "title": "Cancella la conferma",
+        "description": "Richiedi la conferma prima di eliminare file e cartelle."
+      },
+      "dragDropAction": {
+        "title": "Azione di trascinamento",
+        "description": "Azione predefinita quando si trascinano i file in una nuova posizione.",
+        "move": "Muoviti",
+        "copy": "Copia",
+        "ask": "Chiedi"
+      }
+    },
+    "authentication": {
+      "internalProviderName": "Internal Authentication",
+      "addProvider": "Aggiungi un fornitore",
+      "addLdapProvider": "Aggiungi LDAP",
+      "system": "Sistema",
+      "systemDescription": "Autenticazione con nome utente e password",
+      "deleteConfirm": "Questo eliminerà definitivamente il provider di autenticazione.",
+      "errors": {
+        "deleteProvider": "Errore nell'eliminazione del provider",
+        "toggleProvider": "Errore nella selezione del provider"
+      },
+      "providerDialog": {
+        "createTitle": "Aggiungi un provider di autenticazione",
+        "editTitle": "Modifica il provider di autenticazione",
+        "fields": {
+          "displayName": "Nome visualizzato",
+          "displayNamePlaceholder": "Ad esempio, SSO aziendale",
+          "issuerUrl": "URL dell'emittente",
+          "issuerUrlPlaceholder": "https://auth.company.com",
+          "clientId": "ID cliente",
+          "clientIdPlaceholder": "ID cliente",
+          "clientSecret": "Segreto del cliente",
+          "clientSecretPlaceholder": "Segreto del cliente",
+          "clientSecretPlaceholderEdit": "Lascia in bianco per mantenere l'esistente",
+          "redirectUri": "Reindirizzamento URI",
+          "redirectUriPlaceholder": "https://your-domain.com/api/oidc/callback",
+          "scope": "Ambito di applicazione",
+          "scopePlaceholder": "profilo openid",
+          "usernameAttribute": "Attributo Nome utente",
+          "usernameAttributePlaceholder": "nome_utente preferito",
+          "firstNameAttribute": "Nome Attributo",
+          "firstNameAttributePlaceholder": "nome_dato",
+          "lastNameAttribute": "Attributo del cognome",
+          "lastNameAttributePlaceholder": "nome_famiglia",
+          "groupsClaim": "Claim dei gruppi",
+          "groupsClaimPlaceholder": "groups",
+          "adminGroups": "Gruppi amministratori (uno per riga)",
+          "adminGroupsPlaceholder": "infra-admins",
+          "organizationGroups": "Organizzazioni per gruppo",
+          "mappingGroup": "Gruppo",
+          "removeMapping": "Rimuovi mappatura",
+          "addMapping": "Aggiungi mappatura"
+        },
+        "advanced": {
+          "show": "Mostra le impostazioni avanzate",
+          "hide": "Nascondi le impostazioni avanzate"
+        },
+        "actions": {
+          "addProvider": "Aggiungi un fornitore",
+          "saveChanges": "Salva le modifiche"
+        },
+        "messages": {
+          "saveFailed": "Impossibile salvare il provider"
+        },
+        "groups": {
+          "title": "Mappatura dei gruppi",
+          "description": "Legge i gruppi dell’utente da un claim del token a ogni accesso. I gruppi amministratori decidono il ruolo (senza, il ruolo non cambia); i gruppi di organizzazione aggiungono l’utente alle organizzazioni ma non lo rimuovono mai. Aggiungi lo scope che fornisce il claim (spesso “groups”)."
+        }
+      },
+      "ldapDialog": {
+        "createTitle": "Aggiungi un fornitore LDAP",
+        "editTitle": "Modifica il provider LDAP",
+        "fields": {
+          "displayName": "Nome visualizzato",
+          "displayNamePlaceholder": "Ad esempio, LDAP aziendale",
+          "host": "Ospite",
+          "hostPlaceholder": "ldap.company.com",
+          "port": "Porto",
+          "bindDN": "Vincola il DN",
+          "bindDNPlaceholder": "cn=admin,dc=company,dc=com",
+          "bindPassword": "Password di vincolo",
+          "bindPasswordPlaceholder": "Password di vincolo",
+          "bindPasswordPlaceholderEdit": "Lascia in bianco per mantenere l'esistente",
+          "baseDN": "DN base",
+          "baseDNPlaceholder": "dc=azienda,dc=com",
+          "userSearchFilter": "Filtro di ricerca utente",
+          "userSearchFilterPlaceholder": "(uid={{username}}) o (sAMAccountName={{username}})",
+          "useTLS": "Usa TLS/SSL",
+          "usernameAttribute": "Attributo Nome utente",
+          "usernameAttributePlaceholder": "uid",
+          "emailAttribute": "Attributo e-mail",
+          "emailAttributePlaceholder": "posta",
+          "firstNameAttribute": "Nome Attributo",
+          "firstNameAttributePlaceholder": "NomeDato",
+          "lastNameAttribute": "Attributo del cognome",
+          "lastNameAttributePlaceholder": "sn",
+          "organizations": "Organizzazioni",
+          "organizationsPlaceholder": "Seleziona organizzazioni",
+          "adminGroupDNs": "DN gruppi admin",
+          "adminGroupDNsPlaceholder": "Una DN per riga, es. cn=admins,ou=groups,dc=company,dc=com",
+          "groupSearchBaseDN": "DN base ricerca gruppi",
+          "groupSearchBaseDNPlaceholder": "ou=groups,dc=company,dc=com",
+          "groupSearchFilter": "Filtro ricerca gruppi",
+          "groupSearchFilterPlaceholder": "(member={{dn}})",
+          "groupNameAttribute": "Attributo nome gruppo",
+          "groupNameAttributePlaceholder": "cn",
+          "groupMemberAttribute": "Attributo membro gruppo",
+          "groupMemberAttributePlaceholder": "member",
+          "connectionTimeoutMs": "Timeout connessione (ms)",
+          "searchTimeoutMs": "Timeout ricerca (ms)"
+        },
+        "summary": {
+          "organizations_one": "{{count}} organizzazione collegata",
+          "organizations_other": "{{count}} organizzazioni collegate",
+          "adminGroups_one": "{{count}} gruppo admin",
+          "adminGroups_other": "{{count}} gruppi admin"
+        },
+        "advanced": {
+          "show": "Mostra le impostazioni avanzate",
+          "hide": "Nascondi le impostazioni avanzate"
+        },
+        "actions": {
+          "addProvider": "Aggiungi un fornitore",
+          "saveChanges": "Salva le modifiche",
+          "testConnection": "Collegamento di prova",
+          "testing": "Test...",
+          "testUsers": "Test utenti",
+          "testingUsers": "Test utenti in corso..."
+        },
+        "messages": {
+          "saveFailed": "Impossibile salvare il provider",
+          "saveFirst": "Salva prima il provider per testare la connessione",
+          "testSuccess": "Test di connessione riuscito",
+          "testFailed": "Test di connessione fallito",
+          "testUsersSuccess": "Test di individuazione utenti completato",
+          "testUsersFailed": "Test di individuazione utenti fallito"
+        },
+        "diagnostics": {
+          "connectionTitle": "Diagnostica connessione",
+          "usersTitle": "Diagnostica individuazione utenti",
+          "host": "Host",
+          "port": "Porta",
+          "tls": "TLS",
+          "baseDN": "Base DN",
+          "bindDN": "Bind DN",
+          "durationMs": "Durata (ms)",
+          "searchProbe": "Sonda ricerca",
+          "searchSampleCount": "Conteggio campioni",
+          "rawEntries": "Voci grezze",
+          "usersFound": "Utenti trovati",
+          "adminCandidates": "Candidati admin",
+          "limit": "Limite",
+          "matchedUsers": "Utenti trovati",
+          "adminUsers": "Utenti marcati admin",
+          "noUsers": "Nessun utente trovato",
+          "noAdminUsers": "Nessun candidato admin trovato",
+          "success": "Successo",
+          "failed": "Fallito",
+          "notRun": "Non eseguito",
+          "enabled": "Abilitato",
+          "disabled": "Disabilitato"
+        },
+        "preset": {
+          "title": "Inizia con un modello di directory",
+          "description": "Applica una configurazione iniziale, poi adatta il server e l'identità di bind alla tua directory.",
+          "directory": "Directory",
+          "domain": "Dominio della directory",
+          "apply": "Applica valori predefiniti",
+          "help": "Entrambi i modelli usano LDAPS (636). Crea un account di servizio dedicato in sola lettura, inserisci la sua password e considera attendibile la CA della tua directory sul server INFRA-W. I gruppi di amministratori restano vuoti finché non li assegni.",
+          "activation": "I nuovi provider vengono salvati disattivati. Verifica la connessione, controlla la mappatura di utenti e amministratori, poi attiva il provider in Autenticazione.",
+          "invalidDomain": "Inserisci un dominio di directory come corp.example.com."
+        }
+      },
+      "editProvider": "Modifica provider",
+      "deleteProvider": "Elimina provider",
+      "enableProvider": "Attiva {{name}}",
+      "providers": "Metodi di accesso",
+      "sessions": {
+        "title": "Sessioni di accesso",
+        "description": "Gli utenti vengono disconnessi dopo un periodo di inattività e dopo una durata massima della sessione. Le modifiche si applicano entro un minuto.",
+        "sessionIdleHours": "Disconnessione dopo inattività",
+        "sessionIdleHoursDescription": "Il lavoro in un terminale, in un desktop remoto o nel file manager conta come attività.",
+        "sessionMaxDays": "Durata massima della sessione",
+        "sessionMaxDaysDescription": "Dopo questo tempo gli utenti accedono di nuovo, anche se sono attivi.",
+        "hours": "ore",
+        "days": "giorni",
+        "save": "Salva",
+        "saved": "Impostazioni delle sessioni di accesso salvate.",
+        "loadFailed": "Impossibile caricare le impostazioni delle sessioni di accesso.",
+        "saveFailed": "Impossibile salvare le impostazioni delle sessioni di accesso."
+      }
+    },
+    "monitoring": {
+      "loading": "Caricamento delle impostazioni di monitoraggio...",
+      "saveSettings": "Salva le impostazioni",
+      "saveSuccess": "Le impostazioni di monitoraggio sono state salvate con successo",
+      "seconds": "secondi",
+      "statusChecker": {
+        "enable": {
+          "title": "Abilita il controllore di stato",
+          "description": "Controlla automaticamente se i server sono online o offline. Se disattivato, tutti i server saranno contrassegnati come online."
+        },
+        "interval": {
+          "title": "Intervallo di controllo",
+          "description": "Con quale frequenza controllare lo stato del server (10-300 secondi)"
+        }
+      },
+      "errors": {
+        "loadSettings": "Impossibile caricare le impostazioni di monitoraggio",
+        "saveSettings": "Impossibile salvare le impostazioni di monitoraggio"
+      }
+    },
+    "identities": {
+      "createIdentity": "Crea identità",
+      "personal": "Personale",
+      "noUsername": "Nessun nome utente",
+      "sshKey": "Chiave SSH",
+      "password": "Password",
+      "editIdentity": "Modifica identità",
+      "deleteIdentity": "Elimina l'identità",
+      "noIdentitiesDescription": "Crea la tua prima identità per iniziare le connessioni al server",
+      "deleteConfirm": "Sei sicuro di voler eliminare \"{{name}}\"? Questa azione non può essere annullata e rimuoverà questa identità da tutti i server che la utilizzano.",
+      "deleteSuccess": "Identità cancellata con successo",
+      "deleteError": "Cancellazione dell'identità fallita",
+      "dialog": {
+        "createTitle": "Crea una nuova identità",
+        "editTitle": "Modifica l'identità",
+        "fields": {
+          "name": "Nome dell'identità",
+          "namePlaceholder": "Inserisci il nome dell'identità",
+          "username": "Nome utente",
+          "usernamePlaceholder": "Nome utente (facoltativo)",
+          "authType": "Tipo di autenticazione",
+          "password": "Password",
+          "passwordPlaceholder": "Inserisci la password",
+          "passwordPlaceholderEdit": "Lascia in bianco per mantenere la password attuale",
+          "sshKey": "Chiave privata SSH",
+          "passphrase": "Passphrase (opzionale)",
+          "passphrasePlaceholder": "Inserisci la passphrase (opzionale)",
+          "passphrasePlaceholderEdit": "Lascia vuoto per mantenere la passphrase attuale"
+        },
+        "authTypes": {
+          "password": "Password",
+          "ssh": "Chiave SSH"
+        },
+        "actions": {
+          "cancel": "Annullamento",
+          "create": "Crea identità",
+          "update": "Aggiorna l'identità"
+        },
+        "messages": {
+          "nameRequired": "Il nome dell'identità è richiesto",
+          "passwordRequired": "La password è necessaria",
+          "sshKeyRequired": "La chiave SSH è necessaria",
+          "createSuccess": "Identità creata con successo",
+          "updateSuccess": "L'identità è stata aggiornata con successo",
+          "createFailed": "Impossibile creare un'identità",
+          "updateFailed": "Non è stato possibile aggiornare l'identità"
+        }
+      }
+    },
+    "integrations": {
+      "empty": "Nessuna integrazione ancora configurata.",
+      "lastSync": "Ultima sincronizzazione",
+      "lastMessage": "Ultimo messaggio",
+      "confirmDelete": "Sei sicuro di voler eliminare l'integrazione \"{{name}}\"?",
+      "actions": {
+        "edit": "Modifica",
+        "test": "Test",
+        "sync": "Sincronizza ora",
+        "delete": "Elimina",
+        "addProxmox": "Aggiungi Proxmox",
+        "addNetbox": "Aggiungi NetBox"
+      },
+      "messages": {
+        "deleted": "Integrazione eliminata con successo",
+        "actionSuccess": "Azione integrazione completata con successo"
+      },
+      "errors": {
+        "loadFailed": "Impossibile caricare le integrazioni",
+        "actionFailed": "Azione integrazione fallita",
+        "deleteFailed": "Impossibile eliminare l'integrazione"
+      }
+    },
+    "backup": {
+      "loading": "Caricamento delle impostazioni di memorizzazione...",
+      "storage": {
+        "title": "Immagazzinamento",
+        "description": "Visualizza l'utilizzo del disco per i tuoi dati INFRA-W.",
+        "database": "Database",
+        "recordings": "Registrazioni",
+        "logs": "Registri",
+        "total": "Totale",
+        "browse": "Sfoglia file"
+      },
+      "backupsSection": {
+        "title": "Backup",
+        "description": "Configura i provider di backup e pianifica i backup automatici."
+      },
+      "addProvider": "Aggiungi un fornitore",
+      "editProvider": "Modifica il fornitore",
+      "providerName": "Nome del fornitore",
+      "providerNamePlaceholder": "Il mio backup",
+      "providerType": "Tipo",
+      "providerTypes": {
+        "local": "Locale",
+        "smb": "Quota SMB",
+        "webdav": "WebDAV"
+      },
+      "localPath": "Percorso di backup",
+      "localPathPlaceholder": "/percorso/da/backup",
+      "smbShare": "Quota SMB",
+      "smbSharePlaceholder": "\\\\server",
+      "smbFolder": "Cartella (opzionale)",
+      "smbFolderPlaceholder": "backup",
+      "smbUsername": "Nome utente",
+      "smbUsernamePlaceholder": "utente",
+      "smbPassword": "Password",
+      "smbPasswordPlaceholder": "password",
+      "smbDomain": "Dominio (opzionale)",
+      "smbDomainPlaceholder": "GRUPPO DI LAVORO",
+      "webdavUrl": "URL del server",
+      "webdavUrlPlaceholder": "https://cloud.example.com/remote.php/dav/files/user",
+      "webdavFolder": "Cartella (opzionale)",
+      "webdavFolderPlaceholder": "backup",
+      "webdavUsername": "Nome utente",
+      "webdavUsernamePlaceholder": "utente",
+      "webdavPassword": "Password",
+      "webdavPasswordPlaceholder": "password",
+      "passwordUnchanged": "Lascia vuoto per mantenere l'attualità",
+      "schedule": {
+        "title": "Backup automatico",
+        "disabled": "Disabili",
+        "hourly": "Ogni ora",
+        "every6h": "Ogni 6 ore",
+        "every12h": "Ogni 12 ore",
+        "daily": "Giornaliero",
+        "weekly": "Settimanale"
+      },
+      "retention": {
+        "title": "Politica di conservazione"
+      },
+      "backups": "backup",
+      "includes": {
+        "title": "Includi nei backup",
+        "database": "Database",
+        "recordings": "Registrazioni",
+        "logs": "Registri"
+      },
+      "providers": "Fornitori",
+      "saveSettings": "Salva le impostazioni",
+      "noProvidersDescription": "Aggiungi un provider di backup per iniziare a creare i backup.",
+      "backupList": "Backup - {{name}}",
+      "loadingBackups": "Caricamento dei backup...",
+      "noBackups": "Non sono stati trovati backup",
+      "restoreConfirm": "Sei sicuro di voler ripristinare \"{{name}}\"? Questa operazione sovrascriverà i dati attuali e riavvierà il server.",
+      "deleteProviderConfirm": "Sei sicuro di voler eliminare \"{{name}}\"? Questa operazione non cancellerà i backup esistenti.",
+      "providerCreated": "Creazione del provider di backup",
+      "providerUpdated": "Aggiornamento del provider di backup",
+      "providerDeleted": "Il provider di backup è stato cancellato",
+      "backupCreated": "Il backup è stato creato con successo",
+      "restoreStarted": "Il ripristino è iniziato, il server si riavvia",
+      "saveSuccess": "Impostazioni salvate con successo",
+      "errors": {
+        "loadFailed": "Impossibile caricare le impostazioni di backup",
+        "saveFailed": "Impossibile salvare le impostazioni",
+        "deleteFailed": "Cancellazione fallita",
+        "backupFailed": "Impossibile creare il backup",
+        "loadBackupsFailed": "Non è riuscito a caricare i backup",
+        "restoreFailed": "Impossibile ripristinare il backup",
+        "nameRequired": "Il nome del fornitore è obbligatorio"
+      },
+      "noFiles": "Nessun file trovato",
+      "createBackup": "Crea backup ora",
+      "deleteProvider": "Elimina provider",
+      "confirmDeleteFile": "Eliminare \"{{name}}\"? L'operazione non può essere annullata."
+    },
+    "preferences": {
+      "themeLabel": "Tema",
+      "appearanceDescription": "Scegli il tema che preferisci. Segue automaticamente le impostazioni del sistema e si regola in base all'ora del giorno.",
+      "themeAuto": "Auto",
+      "themeLight": "Luce",
+      "themeDark": "Scuro",
+      "themeOled": "OLED",
+      "language": "Lingua",
+      "languageDescription": "Seleziona la lingua che preferisci per l'interfaccia.",
+      "sessionSynchronization": "Sincronizzazione della sessione",
+      "sessionSyncAcrossDevices": "Tra i dispositivi",
+      "sessionSyncSameBrowser": "Stesso browser",
+      "sessionSyncSameTab": "Stessa scheda",
+      "sessionSyncAcrossDevicesDesc": "Le sessioni saranno disponibili su tutti i dispositivi e saranno sincronizzate",
+      "sessionSyncSameBrowserDesc": "Le sessioni verranno sincronizzate per la sessione utente corrente.",
+      "sessionSyncSameTabDesc": "Le sessioni si sincronizzeranno all'interno della scheda del browser"
+    },
+    "hostKeys": {
+      "search": "Cerca host, server o impronta",
+      "empty": "Nessun host SSH è ancora stato connesso.",
+      "noMatch": "Nessun risultato per la ricerca.",
+      "changed": "Chiave cambiata",
+      "servers": "Server: {{names}}",
+      "noServers": "Nessun server usa più questo indirizzo",
+      "trusted": "Attendibile: {{type}} {{fingerprint}}",
+      "presented": "Presentata il {{date}}: {{type}} {{fingerprint}}",
+      "seen": "Vista la prima volta {{first}}, l’ultima {{last}}",
+      "accept": "Accetta nuova chiave",
+      "acceptConfirm": "Considerare attendibile la nuova chiave di {{host}}? Accettala solo se sai perché è cambiata, per esempio dopo una reinstallazione.",
+      "accepted": "La nuova chiave di {{host}} è attendibile.",
+      "forget": "Dimentica chiave",
+      "forgetFor": "Dimentica la chiave di {{host}}",
+      "forgetConfirm": "Dimenticare la chiave di {{host}}? La prossima connessione considera attendibile la chiave che l’host presenterà.",
+      "forgotten": "La chiave di {{host}} è stata dimenticata."
+    },
+    "apiTokens": {
+      "create": "Crea token",
+      "createButton": "Crea",
+      "empty": "Non hai token API.",
+      "name": "Nome",
+      "namePlaceholder": "Per esempio: esportazione inventario CI",
+      "access": "Accesso",
+      "scopes": {
+        "read": "Sola lettura",
+        "write": "Lettura e scrittura"
+      },
+      "expiry": "Scade dopo",
+      "days_one": "{{count}} giorno",
+      "days_other": "{{count}} giorni",
+      "limits": "Un token agisce con i tuoi permessi. Non può modificare password, secondi fattori, accessi o token, né aprire terminali. Invialo nell’intestazione “Authorization: Bearer <token>”.",
+      "createdTitle": "Copia ora il tuo token",
+      "createdHint": "Il token viene mostrato solo questa volta. Salvalo nel gestore di password o nello strumento che lo usa.",
+      "tokenValue": "Token API",
+      "copy": "Copia token",
+      "revoke": "Revoca",
+      "revokeConfirm": "Revocare il token “{{name}}”? Gli strumenti che lo usano smettono subito di funzionare.",
+      "revoked": "Il token “{{name}}” è stato revocato.",
+      "expired": "Scaduto",
+      "details": "{{prefix}}… · creato {{created}} · scade {{expires}}",
+      "lastUsed": "Ultimo uso {{date}}",
+      "neverUsed": "Mai usato"
+    },
+    "notifications": {
+      "url": "URL del webhook",
+      "urlDescription": "Riceve un POST JSON per evento. Il campo “text” è adatto a ricevitori tipo Slack (Slack, Mattermost, Google Chat); ntfy, Gotify, n8n o i workflow di Teams possono leggere il resto. Vuoto disattiva le notifiche.",
+      "secret": "Segreto di firma",
+      "secretDescription": "Facoltativo. Ogni richiesta porta allora “X-INFRA-W-Signature: sha256=…”, l’HMAC-SHA256 del corpo, così il ricevitore può verificare che provenga da INFRA-W.",
+      "secretKept": "Salvato – lascia vuoto per mantenerlo",
+      "secretNone": "Nessun segreto",
+      "removeSecret": "Rimuovi il segreto salvato",
+      "eventsTitle": "Eventi",
+      "eventsDescription": "Quali eventi vengono inviati.",
+      "events": {
+        "backupFailed": "Un backup pianificato non è riuscito",
+        "integrationSyncFailed": "Una sincronizzazione di integrazione non è riuscita",
+        "integrationRemovalsHeld": "Una sincronizzazione NetBox ha trattenuto delle rimozioni da verificare",
+        "hostsOffline": "Degli host non rispondono più (controlli di stato)",
+        "hostsOnline": "Degli host sono di nuovo raggiungibili"
+      },
+      "sendTest": "Invia test",
+      "testSent": "Il webhook ha accettato la notifica di test.",
+      "testFailed": "Impossibile consegnare la notifica di test.",
+      "saved": "Impostazioni di notifica salvate.",
+      "saveFailed": "Impossibile salvare le impostazioni di notifica."
+    }
+  },
+  "share": {
+    "errors": {
+      "unableToConnect": "Impossibile connettersi",
+      "failedToJoin": "Impossibile unirsi alla sessione"
+    },
+    "sessionEnded": {
+      "title": "Sessione conclusa",
+      "description": "La sessione condivisa è stata chiusa"
+    },
+    "windowTitle": "{{name}} (condiviso) - INFRA-W"
+  },
+  "servers": {
+    "tags": {
+      "title": "Tag",
+      "createNewTag": "Crea un nuovo tag",
+      "tagName": "Nome del tag",
+      "create": "Crea",
+      "filterByTags": "Filtra per tag",
+      "clearAll": "Cancella tutto",
+      "noTagsCreated": "Non sono ancora stati creati tag",
+      "editTag": "Modifica il tag",
+      "deleteTag": "Elimina il tag"
+    },
+    "contextMenu": {
+      "createFolder": "Crea cartella",
+      "deleteFolder": "Elimina cartella",
+      "renameFolder": "Rinomina cartella",
+      "new": "Nuovo",
+      "sshServer": "Server SSH",
+      "telnetServer": "Server Telnet",
+      "rdpServer": "Server RDP",
+      "vncServer": "Server VNC",
+      "import": "Importazione",
+      "pve": "PVE",
+      "netbox": "NetBox",
+      "sshConfig": "Configurazione SSH",
+      "connect": "Collegati",
+      "quickConnect": "Collegamento rapido",
+      "openSFTP": "Aprire SFTP",
+      "runScript": "Esegui lo script",
+      "editServer": "Modifica il server",
+      "editIntegration": "Modifica l'integrazione",
+      "duplicateServer": "Server duplicato",
+      "pasteIdentityPassword": "Incolla la password",
+      "deleteServer": "Elimina il server",
+      "wakeOnLan": "Wake-on-LAN",
+      "shutdown": "Spegnimento",
+      "stop": "Fermati",
+      "start": "Iniziare",
+      "resumeSession": "Riprendi sessione",
+      "newFolderName": "Nuova cartella",
+      "deleteFolderConfirm": "Eliminare questa cartella? Anche i server al suo interno vengono eliminati. L'operazione non può essere annullata.",
+      "deleteServerConfirm": "Eliminare {{name}}? L'operazione non può essere annullata.",
+      "duplicated": "{{name}} duplicato.",
+      "unknownIdentity": "Identità {{id}}"
+    },
+    "directConnect": {
+      "identitySource": "Origine identità",
+      "manual": "Credenziali manuali",
+      "savedIdentity": "Identità salvata",
+      "identitySelection": "Seleziona identità",
+      "identityPlaceholder": "Scegli un'identità",
+      "personalIdentity": "Personale",
+      "organizationIdentity": "Organizzazione",
+      "usingIdentity": "Identità in uso: {{name}}",
+      "messages": {
+        "identityRequired": "Seleziona un'identità",
+        "noIdentitiesAvailable": "Nessuna identità compatibile disponibile per questa connessione.",
+        "sshIdentityHint": "Suggerimento: per gli accessi con chiave SSH, aggiungi la tua chiave come identità personale e usa Identità salvata per un accesso rapido e riutilizzabile.",
+        "usernameRequired": "Inserisci un nome utente",
+        "passwordRequired": "Inserisci una password",
+        "sshKeyRequired": "Seleziona una chiave SSH"
+      }
+    },
+    "tabs": {
+      "contextMenu": {
+        "popOut": "Pop Out",
+        "readOnly": "Sola lettura",
+        "readWrite": "Read & Write",
+        "copyShareLink": "Copy Share Link",
+        "changePermissions": "Change Permissions",
+        "stopSharing": "Stop Sharing",
+        "duplicate": "Duplica",
+        "openFileManager": "File Manager",
+        "hibernateSession": "Iberna",
+        "closeSession": "Disconnetti",
+        "shareReadOnly": "Condividi in sola lettura",
+        "shareWritable": "Condividi con digitazione",
+        "forHours_one": "Per {{count}} ora",
+        "forHours_other": "Per {{count}} ore",
+        "linkValidUntil": "Link valido fino a {{time}}"
+      },
+      "closeSession": "Chiudi sessione",
+      "splitView": {
+        "enable": "Attiva vista divisa",
+        "disable": "Disattiva vista divisa"
+      },
+      "messages": {
+        "sharedReadOnly": "Link di condivisione copiato. Chi ha il link può guardare questa sessione fino a {{time}}.",
+        "sharedWritable": "Link di condivisione copiato. Chi ha il link può guardare questa sessione e digitare fino a {{time}}.",
+        "nowReadOnly": "Gli spettatori ora possono solo guardare.",
+        "nowWritable": "Gli spettatori ora possono digitare in questa sessione.",
+        "sharingStopped": "Condivisione terminata. Il link non funziona più.",
+        "linkCopied": "Link di condivisione copiato."
+      }
+    },
+    "wol": {
+      "successDescription": "Pacchetto magico inviato a {{name}}",
+      "errorDescription": "Non è riuscito a inviare il pacchetto magico"
+    },
+    "messages": {
+      "fillRequiredFields": "Compila tutti i campi obbligatori",
+      "serverCreated": "Il server è stato creato con successo",
+      "serverUpdated": "Il server è stato aggiornato con successo",
+      "createFailed": "Impossibile creare un server",
+      "updateFailed": "Non è riuscito ad aggiornare il server",
+      "createIdentityFailed": "Impossibile creare un'identità",
+      "updateIdentityFailed": "Non è stato possibile aggiornare l'identità",
+      "connectionFailed": "Impossibile stabilire la connessione al server.",
+      "serverUnavailable": "Questo server non è più disponibile. Aggiorna l'inventario e riprova.",
+      "connectionFailedReason": "{{name}}: {{message}}"
+    },
+    "dialog": {
+      "addServer": "Aggiungi un server",
+      "addProtocolServer": "Aggiungi il server {{protocol}}",
+      "editServer": "Modifica il server",
+      "tabs": {
+        "details": "Dettagli",
+        "identities": "Identità",
+        "settings": "Impostazioni"
+      },
+      "actions": {
+        "save": "Risparmia",
+        "create": "Crea"
+      },
+      "fields": {
+        "name": "Nome",
+        "icon": "Icona",
+        "serverIp": "Ospite",
+        "port": "Porto",
+        "protocol": "Protocollo",
+        "username": "Nome utente",
+        "password": "Password",
+        "nodeName": "Nome del nodo",
+        "vmid": "ID VM",
+        "macAddress": "Indirizzo MAC",
+        "wakeOnLanBroadcast": "Indirizzo broadcast Wake-on-LAN",
+        "wakeOnLanBroadcastHint": "Vuoto invia a 255.255.255.255, che resta nella rete di INFRA-W. Per un host in un’altra sottorete inserisci l’indirizzo broadcast di quella sottorete (per esempio 10.0.5.255); il router deve inoltrarlo."
+      },
+      "placeholders": {
+        "serverName": "Nome del server",
+        "serverIp": "Nome host o IP",
+        "port": "Porto",
+        "username": "Nome utente",
+        "password": "Password",
+        "nodeName": "Nome del nodo",
+        "vmid": "ID VM",
+        "macAddress": "AA:BB:CC:DD:EE:FF"
+      },
+      "settings": {
+        "jumpHosts": {
+          "title": "Ospiti del salto",
+          "description": "Collegati attraverso i server intermedi per raggiungere il server di destinazione",
+          "addButton": "Aggiungi Jump Host",
+          "removeTooltip": "Rimuovere l'host di salto",
+          "noServersAvailable": "Non ci sono server SSH disponibili per gli host di salto. Crea prima i server SSH."
+        },
+        "wakeOnLan": {
+          "title": "Abilita il Wake-On-LAN",
+          "description": "Permetti di risvegliare questo server da remoto utilizzando il suo indirizzo MAC"
+        },
+        "keyboardLayout": {
+          "title": "Layout della tastiera",
+          "description": "Seleziona il layout della tastiera da utilizzare per questa connessione."
+        },
+        "display": {
+          "title": "Impostazioni del display",
+          "description": "Configura la profondità di colore e il comportamento di ridimensionamento del display remoto",
+          "colorDepth": "Profondità del colore",
+          "resizeMethod": "Metodo di ridimensionamento",
+          "colorDepths": {
+            "auto": "Automatica",
+            "8": "256 colori (8 bit)",
+            "16": "High color (16 bit)",
+            "24": "True color (24 bit)",
+            "32": "True color (32 bit)"
+          },
+          "resizeMethods": {
+            "display-update": "Aggiornamento del display (consigliato)",
+            "reconnect": "Riconnetti",
+            "none": "Nessuno"
+          }
+        },
+        "performance": {
+          "title": "Impostazioni delle prestazioni",
+          "description": "Alterna gli effetti visivi che possono influire sulle prestazioni delle connessioni più lente.",
+          "enableWallpaper": "Abilita lo sfondo",
+          "enableWallpaperDesc": "Mostra lo sfondo del desktop del sistema remoto",
+          "enableTheming": "Abilita la tematizzazione",
+          "enableThemingDesc": "Usa le finestre tematiche e i controlli del sistema remoto",
+          "enableFontSmoothing": "Abilita l'attenuazione dei caratteri",
+          "enableFontSmoothingDesc": "Renderizza il testo con bordi lisci per una migliore leggibilità",
+          "enableFullWindowDrag": "Abilita il trascinamento dell'intera finestra",
+          "enableFullWindowDragDesc": "Visualizza il contenuto della finestra mentre si trascinano le finestre",
+          "enableDesktopComposition": "Abilita la composizione del desktop",
+          "enableDesktopCompositionDesc": "Abilita le finestre trasparenti e gli effetti visivi",
+          "enableMenuAnimations": "Abilita le animazioni del menu",
+          "enableMenuAnimationsDesc": "Abilita le animazioni di apertura e chiusura del menu"
+        },
+        "audio": {
+          "enableAudio": "Abilita l'audio",
+          "enableAudioDesc": "Trasmetti l'audio del sistema remoto al tuo browser"
+        },
+        "terminal": {
+          "title": "Compatibilità dei terminali",
+          "description": "Regola il comportamento dei tasti per i diversi tipi di terminale",
+          "backspace": "Backspace",
+          "delete": "Elimina",
+          "functionKeys": "Tasti funzione"
+        },
+        "noSettings": "Non sono disponibili altre impostazioni per questo tipo di voce.",
+        "certificate": {
+          "title": "Certificato fissato",
+          "placeholder": "Impronta SHA-1 o SHA-256",
+          "description": "Senza impronta il certificato del server non viene verificato. Con un’impronta (va bene l’identificazione digitale di Windows) viene accettato solo quel certificato; separane più di una con virgole."
+        }
+      },
+      "identities": {
+        "organizationIdentities": "Identità dell'organizzazione",
+        "personalIdentities": "Identità personali",
+        "orgDescription": "Condivisa con tutti i membri dell'organizzazione. Tutti possono utilizzare queste identità.",
+        "personalDescription": "Sono visibili solo a te. Gli altri membri dell'organizzazione non possono vederli.",
+        "identityName": "Nome dell'identità",
+        "username": "Nome utente",
+        "authentication": "Autenticazione",
+        "passwordField": "Password",
+        "userPassword": "Password",
+        "sshKey": "Chiave SSH",
+        "sshPrivateKey": "Chiave privata SSH",
+        "passphrase": "Passphrase (opzionale)",
+        "new": "Nuovo",
+        "removeIdentity": "Rimuovi l'identità",
+        "unlinkIdentity": "Scollegamento dell'identità",
+        "moveToOrg": "Passare all'organizzazione",
+        "availableToLink": "Disponibile per il collegamento",
+        "noOrgIdentities": "Non ci sono identità dell'organizzazione. Creane una da condividere con tutti i membri.",
+        "noPersonalIdentities": "Nessuna identità personale. Creane una per uso privato."
+      }
+    },
+    "proxmoxDialog": {
+      "title": {
+        "import": "Importazione di Proxmox VE",
+        "edit": "Modifica Proxmox VE"
+      },
+      "fields": {
+        "name": "Nome",
+        "serverIp": "IP del server",
+        "port": "Porto",
+        "username": "Nome utente",
+        "password": "Password"
+      },
+      "placeholders": {
+        "name": "Nome",
+        "serverIp": "IP del server",
+        "port": "Porto",
+        "username": "Nome utente (ad esempio, root@pam)",
+        "password": "Password"
+      },
+      "actions": {
+        "import": "Importazione",
+        "edit": "Salva"
+      },
+      "messages": {
+        "created": "L'integrazione con Proxmox è stata creata con successo",
+        "updated": "L'integrazione di Proxmox è stata aggiornata con successo",
+        "createFailed": "Impossibile creare un'integrazione con Proxmox",
+        "updateFailed": "Non è stato possibile aggiornare l'integrazione di Proxmox"
+      }
+    },
+    "netboxDialog": {
+      "title": {
+        "import": "Importa NetBox",
+        "edit": "Modifica NetBox"
+      },
+      "fields": {
+        "apiUrl": "URL API NetBox",
+        "apiToken": "Token API",
+        "verifyTls": "Verifica certificati TLS",
+        "syncIntervalMinutes": "Intervallo di sincronizzazione (minuti)",
+        "includeDeviceRoles": "Includi ruoli dispositivo",
+        "excludeDeviceRoles": "Escludi ruoli dispositivo",
+        "includeVmRoles": "Includi ruoli VM",
+        "excludeVmRoles": "Escludi ruoli VM",
+        "includeTags": "Includi tag",
+        "excludeTags": "Escludi tag",
+        "defaultProtocol": "Protocollo predefinito",
+        "defaultPort": "Porta predefinita",
+        "protocolRules": "Regole protocollo (dall'alto verso il basso)",
+        "targetType": "Tipo destinazione",
+        "conditionType": "Tipo di condizione",
+        "conditionValue": "Valore condizione",
+        "customFieldKey": "Chiave campo personalizzato",
+        "customFieldValue": "Valore campo personalizzato",
+        "protocol": "Protocollo",
+        "port": "Porta"
+      },
+      "tlsEnabled": "Abilitato",
+      "tlsDisabled": "Disabilitato",
+      "rulesHelper": "Le regole vengono valutate dall'alto verso il basso. Esempio: tipo condizione \"Etichetta/Tag\", valore \"rdp\", protocollo azione \"RDP\". Il protocollo predefinito viene usato solo se nessuna regola corrisponde.",
+      "matchTypes": {
+        "label": "Etichetta/Tag",
+        "deviceRole": "Ruolo dispositivo",
+        "vmRole": "Ruolo VM",
+        "platform": "Piattaforma",
+        "nameIncludes": "Nome contiene",
+        "customField": "Campo personalizzato"
+      },
+      "placeholders": {
+        "apiUrl": "https://netbox.example.com",
+        "apiToken": "Token API NetBox",
+        "csv": "Valori separati da virgole",
+        "matchValue": "es. rdp",
+        "customFieldKey": "Chiave campo personalizzato",
+        "customFieldValue": "Valore campo personalizzato"
+      },
+      "actions": {
+        "addRule": "Aggiungi regola",
+        "removeRule": "Rimuovi regola"
+      },
+      "targetTypes": {
+        "any": "Tutti",
+        "device": "Dispositivo",
+        "vm": "VM"
+      }
+    },
+    "integrationMessages": {
+      "loadFailed": "Impossibile caricare i dettagli integrazione",
+      "syncFailed": "Sincronizzazione integrazione fallita",
+      "operationFailed": "Operazione integrazione fallita",
+      "operationSucceeded": "Operazione integrazione completata",
+      "testConnection": "Test connessione",
+      "syncNow": "Sincronizza ora",
+      "saveFirst": "Salva prima l'integrazione.",
+      "lastSyncAt": "Ultima sincronizzazione: {{date}}",
+      "neverSynced": "Non ancora sincronizzato",
+      "previewSync": "Anteprima",
+      "previewTitle": "Anteprima della sincronizzazione",
+      "previewSummary": "Una sincronizzazione creerebbe {{create}} server, ne aggiornerebbe {{update}} e ne rimuoverebbe {{remove}}.",
+      "preview": {
+        "create": "Nuovi",
+        "remove": "Non più in NetBox"
+      },
+      "previewMore": "e altri {{count}}",
+      "removalsNeedReview": "Queste rimozioni sono trattenute: una sincronizzazione rimuove più di 5 server (e più del 10%), o tutti, solo dopo che le applichi qui.",
+      "reviewRemovals": "Verifica le rimozioni trattenute",
+      "applyRemovals": "Applica {{count}} rimozioni",
+      "applyRemovalsConfirm": "Rimuovere {{count}} server che non sono più in NetBox? Le loro sessioni terminano e scompaiono dall’inventario."
+    },
+    "connectionReasonDialog": {
+      "title": "Motivo della connessione richiesta",
+      "reasonLabel": "Indica il motivo della connessione a <strong>{{serverName}}</strong>:",
+      "placeholder": "Inserisci il motivo di questa connessione...",
+      "characterCount": "{{count}}/500",
+      "actions": {
+        "cancel": "Annullamento",
+        "connect": "Collegati"
+      }
+    },
+    "sshConfigImport": {
+      "title": "Importazione della configurazione SSH",
+      "configContent": {
+        "label": "Contenuto della configurazione SSH",
+        "placeholder": "Incolla qui il contenuto della tua configurazione SSH..."
+      },
+      "keyFiles": {
+        "label": "File chiave SSH ({{count}} trovato)",
+        "userLabel": "Utente: {{username}}",
+        "uploaded": "✓ Caricato",
+        "uploadButton": "Carica"
+      },
+      "actions": {
+        "cancel": "Annullamento",
+        "import": "Importazione",
+        "importing": "Importazione..."
+      },
+      "messages": {
+        "noContent": "Fornisci il contenuto della configurazione SSH",
+        "noFolder": "Non è stata selezionata alcuna cartella",
+        "uploadSuccess": "Chiave {{name}} caricata con successo",
+        "uploadFailed": "Impossibile caricare la chiave {{name}}",
+        "importFailed": "Importazione fallita della configurazione SSH"
+      }
+    },
+    "fileManager": {
+      "createFile": {
+        "title": "Crea file",
+        "placeholder": "Nome del file"
+      },
+      "createFolder": {
+        "title": "Crea cartella",
+        "placeholder": "Nome della cartella"
+      },
+      "fileEditor": {
+        "loading": "Caricamento...",
+        "saveSuccess": "File salvato con successo",
+        "saveFailed": "Impossibile salvare il file",
+        "unsavedChanges": "Le modifiche non sono state salvate. Sei sicuro di voler chiudere questo file?",
+        "loadFailed": "Impossibile aprire il file",
+        "unsaved": "Non salvato"
+      },
+      "contextMenu": {
+        "download": "Scarica",
+        "rename": "Rinomina",
+        "delete": "Elimina",
+        "copy": "Copia",
+        "paste": "Incolla",
+        "edit": "Modifica",
+        "preview": "Anteprima",
+        "moveHere": "Spostati qui",
+        "copyHere": "Copia qui",
+        "bigFileConfirm": "Questo file ha una dimensione di {{size}} MB. Sei sicuro di volerlo modificare?",
+        "deleteConfirm": "Sei sicuro di voler cancellare \"{{name}}\"? Questa azione non può essere annullata.",
+        "selectAll": "Seleziona tutti",
+        "insertSnippet": "Inserisci uno snippet",
+        "sendCtrlC": "Invia Ctrl+C",
+        "clearTerminal": "Terminale libero",
+        "properties": "Proprietà",
+        "openTerminal": "Apri il terminale qui",
+        "downloadFolder": "Scarica la cartella",
+        "copyPath": "Copia percorso"
+      },
+      "properties": {
+        "general": "Generale",
+        "permissions": "Permessi",
+        "checksum": "Checksum",
+        "folder": "Cartella",
+        "file": "File",
+        "path": "Posizione",
+        "size": "Dimensioni",
+        "calculateSize": "Calcola",
+        "owner": "Proprietario",
+        "group": "Gruppo",
+        "modified": "Modificato",
+        "accessed": "Accesso",
+        "calculating": "Calcolo...",
+        "calculate": "Calcola",
+        "byteCount": "{{value}} byte"
+      },
+      "permissions": {
+        "owner": "Proprietario",
+        "group": "Gruppo",
+        "others": "Altri",
+        "read": "Leggi",
+        "write": "Scrivi",
+        "execute": "Eseguire",
+        "octal": "Ottale",
+        "preview": "Anteprima",
+        "apply": "Applicare"
+      },
+      "filePreview": {
+        "cannotPreview": "Impossibile visualizzare l'anteprima del file",
+        "videoNotSupported": "Il tuo browser non supporta la riproduzione di video",
+        "audioNotSupported": "Il tuo browser non supporta la riproduzione audio",
+        "zoom": "Zoom",
+        "fitToWindow": "Adatta alla finestra"
+      },
+      "selection": {
+        "itemsSelected": "{{count}} elementi selezionati",
+        "filesSelected": "{{count}} file selezionati",
+        "foldersSelected": "{{count}} cartella/e selezionata/e",
+        "clearSelection": "Cancella la selezione",
+        "download": "Scarica",
+        "delete": "Elimina",
+        "deleteConfirm": "Sei sicuro di voler eliminare gli articoli di {{count}} ?"
+      },
+      "header": {
+        "name": "Nome",
+        "size": "Dimensioni",
+        "permissions": "Permessi",
+        "modified": "Modificato",
+        "sortBy": "Ordina per {{column}}",
+        "sortedAscending": "{{column}}, ordine crescente",
+        "sortedDescending": "{{column}}, ordine decrescente"
+      },
+      "actionBar": {
+        "enterDirectory": "Inserisci il percorso della directory...",
+        "hiddenDirectories": "{{count}} directory nascoste",
+        "switchToGrid": "Passa alla visualizzazione a griglia",
+        "switchToList": "Passa alla vista elenco",
+        "back": "Indietro",
+        "forward": "Avanti",
+        "up": "Cartella superiore",
+        "upload": "Carica"
+      },
+      "item": {
+        "link": "link",
+        "actions": "Azioni per {{name}}"
+      },
+      "states": {
+        "loading": "Caricamento dei file...",
+        "accessDenied": "Accesso negato",
+        "emptyFolder": "Questa cartella è vuota",
+        "dropFilesHint": "Lascia i file qui per caricarli",
+        "loadFailed": "Impossibile caricare la cartella",
+        "connectionError": "Connessione al server non riuscita",
+        "dropToUpload": "Rilascia i file per caricarli"
+      },
+      "toast": {
+        "downloadingItems": "Download degli articoli di {{count}} ...",
+        "uploaded": "Caricato {{name}}",
+        "uploadFailed": "Caricamento fallito: {{message}}",
+        "connectionLost": "La connessione SFTP è stata persa. Si prega di riconnettersi.",
+        "error": "Si è verificato un errore",
+        "missingPath": "percorso del file mancante"
+      }
+    },
+    "terminalActions": {
+      "menuTitle": "Azioni terminali",
+      "snippets": "Frammenti",
+      "keyboardShortcuts": "Scorciatoie da tastiera",
+      "broadcasting": "Trasmissione",
+      "fullScreen": "Schermo intero",
+      "exitFullScreen": "Esci dalla modalità a schermo intero",
+      "badgeOn": "ON"
+    },
+    "snippetsMenu": {
+      "search": "Cerca snippet...",
+      "empty": "Nessuno snippet. Creali nella pagina Snippets.",
+      "noMatch": "Nessuno snippet corrisponde alla ricerca."
+    },
+    "keyboardShortcutsMenu": {
+      "search": "Cerca scorciatoie...",
+      "noMatch": "Nessuna scorciatoia corrisponde alla ricerca."
+    },
+    "scriptDialogs": {
+      "inputRequired": "Input richiesto",
+      "selectOption": "Seleziona un'opzione",
+      "confirmAction": "Conferma azione",
+      "enterValue": "Inserisci un valore",
+      "passwordPlaceholder": "Inserisci la password...",
+      "valuePlaceholder": "Inserisci un valore...",
+      "yes": "Sì",
+      "no": "No",
+      "submit": "Invia",
+      "copyMessage": "Copia messaggio",
+      "copyAll": "Copia tutto",
+      "copyValue": "Copia {{name}}",
+      "openInNewTab": "Apri in una nuova scheda",
+      "noSummary": "Nessun dato di riepilogo",
+      "noTable": "Nessun dato di tabella",
+      "copyAsText": "Copia come testo",
+      "copyAsCsv": "Copia come CSV"
+    },
+    "signInPrompt": {
+      "title": "Accesso a {{name}}",
+      "continue": "Continua"
+    }
+  },
+  "welcome": {
+    "recentConnections": "Collegamenti recenti"
+  },
+  "workspace": {
+    "title": "Accesso all'infrastruttura",
+    "subtitle": "I tuoi server. Un unico spazio di lavoro.",
+    "inventory": "Inventario",
+    "addServer": "Aggiungi server",
+    "connectNetbox": "Collega NetBox",
+    "manageIntegrations": "Gestisci integrazioni",
+    "searchHosts": "Cerca host…",
+    "connectHost": "Connetti a {{name}} tramite {{protocol}}",
+    "noAddress": "Nessun indirizzo",
+    "online": "Online",
+    "offline": "Offline",
+    "unknown": "Non verificato",
+    "disabled": "Disattivato",
+    "noMatches": "Nessun host corrispondente",
+    "noHosts": "Inizia con la tua infrastruttura",
+    "addHostsHint": "Aggiungi un server o collega NetBox per sincronizzare il tuo inventario.",
+    "connectHint": "Seleziona un host per connetterti. Clic destro per altre azioni.",
+    "resumeSessions": "Riprendi sessioni",
+    "suspended": "Sessione sospesa",
+    "loadingHistory": "Caricamento connessioni recenti…",
+    "historyError": "Impossibile caricare le connessioni recenti.",
+    "retry": "Riprova",
+    "noHistory": "Le tue connessioni recenti appariranno qui dopo aver avviato una sessione.",
+    "sessionPolicy": "Registrazione delle sessioni",
+    "recordingPolicy": "La registrazione dipende dalla policy di ciascuna organizzazione. Consulta la cronologia degli accessi e riproduci le registrazioni disponibili in Audit.",
+    "viewAudit": "Apri audit e registrazioni",
+    "toggleNavigation": "Mostra o nascondi l'inventario",
+    "navigation": "Navigazione principale",
+    "toggleTheme": "Cambia tema chiaro / scuro",
+    "liveInventory": "Inventario connesso",
+    "reconnecting": "Inventario disconnesso",
+    "inventoryHint": "Usa + per aggiungere un server. Clic destro per cartelle e importazioni.",
+    "loginSubtitle": "Accedi al tuo spazio di lavoro dell'infrastruttura."
+  },
+  "enterprise": {
+    "workspace": "Spazio di lavoro",
+    "overview": "Panoramica",
+    "settingsNavigation": "Navigazione impostazioni",
+    "dialog": "Finestra di dialogo",
+    "closeDialog": "Chiudi finestra di dialogo",
+    "unavailablePage": "Pagina non disponibile",
+    "unavailablePageDescription": "Questa pagina delle impostazioni non esiste o richiede l'accesso da amministratore.",
+    "groups": {
+      "account": "Il tuo account",
+      "preferences": "Preferenze",
+      "access": "Accesso e identità",
+      "infrastructure": "Infrastruttura",
+      "system": "Sistema"
+    },
+    "groupDescriptions": {
+      "account": "Il tuo profilo, la sicurezza dell'accesso, le credenziali e le sessioni del browser.",
+      "preferences": "Aspetto e comportamento di spazio di lavoro, terminale e file manager.",
+      "access": "Controlla chi può accedere e a quale infrastruttura.",
+      "infrastructure": "Collega le fonti di inventario e definisci gli strumenti del tuo team.",
+      "system": "Mantieni il servizio monitorato e i tuoi dati recuperabili."
+    },
+    "descriptions": {
+      "overview": "Il tuo account e le tue preferenze, oltre alle impostazioni di accesso, infrastruttura e sistema per gli amministratori.",
+      "authentication": "Configura i provider di accesso. Inizia rapidamente con FreeIPA o Microsoft Active Directory.",
+      "users": "Gestisci gli account utente e l'accesso amministrativo.",
+      "organizations": "Definisci l'appartenenza ai team, l'accesso ai server e le policy di registrazione.",
+      "integrations": "Collega NetBox e Proxmox e gestisci la sincronizzazione dell'inventario.",
+      "monitoring": "Configura come INFRA-W verifica se i tuoi server sono online.",
+      "backup": "Configura le destinazioni di backup e ripristina i dati salvati.",
+      "account": "Gestisci il tuo profilo e la sicurezza dell'accesso.",
+      "identities": "Gestisci le credenziali usate per connettersi all'infrastruttura.",
+      "sessions": "Browser e dispositivi connessi al tuo account.",
+      "terminal": "Personalizza la console SSH: caratteri, colori e cursore.",
+      "fileManager": "Scegli come vengono visualizzati e gestiti i file remoti.",
+      "keymaps": "Configura le scorciatoie da tastiera per le sessioni remote.",
+      "preferences": "Aspetto, lingua e comportamento delle sessioni aperte.",
+      "hostKeys": "Chiavi host SSH, considerate attendibili al primo utilizzo. Un host che presenta una chiave diversa viene bloccato finché non la accetti qui.",
+      "apiTokens": "Token personali per script e strumenti che usano l’API di INFRA-W con i tuoi permessi.",
+      "notifications": "Un webhook informato di backup e sincronizzazioni non riusciti e di host non raggiungibili."
+    },
+    "about": {
+      "title": "Informazioni su questa installazione",
+      "description": "La versione di INFRA-W in esecuzione su questo server.",
+      "releaseNotes": "Note di rilascio su GitHub"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.organizations-page
+  .org-item + .org-item, .org-invitation + .org-invitation, .member-list .org-row + .org-row
+    border-top: 1px solid var(--border)
+
+  .org-row
+    display: flex
+    align-items: center
+    gap: 4px
+    padding: 12px 0
+
+  .org-toggle
+    flex: 1
+    min-width: 0
+    display: flex
+    align-items: center
+    gap: 8px
+    padding: 0
+    border: 0
+    background: none
+    color: inherit
+    font: inherit
+    text-align: left
+    cursor: pointer
+    > svg
+      flex-shrink: 0
+      color: var(--subtext)
+      transition: transform .12s ease
+    &:hover .org-row-title
+      text-decoration: underline
+      text-underline-offset: 3px
+    &[aria-expanded="true"] > svg
+      transform: rotate(90deg)
+    &:focus-visible
+      outline: 2px solid var(--primary)
+      outline-offset: 2px
+
+  .org-item:first-child > .org-row, .org-invitation:first-child
+    padding-top: 0
+
+  .org-row-text
+    flex: 1
+    min-width: 0
+    display: flex
+    flex-direction: column
+    gap: 3px
+
+  .org-row-title
+    display: flex
+    align-items: center
+    gap: 8px
+    font-size: 14px
+    font-weight: 500
+
+  .org-row-meta
+    color: var(--subtext)
+    font-size: 13px
+    overflow-wrap: anywhere
+
+  .org-detail
+    padding: 0 0 24px 27px
+    @media (max-width: 768px)
+      padding-left: 0

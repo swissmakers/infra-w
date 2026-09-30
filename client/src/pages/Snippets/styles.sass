@@ -1,0 +1,25 @@
+.snippets-page
+  .snippets-toolbar
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    gap: 16px
+    margin-bottom: 16px
+
+    .tab-switcher
+      flex: 1
+      border-bottom: 0
+
+    .organization-selector
+      width: 240px
+      margin-bottom: 6px
+
+    .snippets-search
+      width: 240px
+      margin-bottom: 6px
+
+    @media (max-width: 600px)
+      flex-direction: column
+      align-items: stretch
+      .organization-selector, .snippets-search
+        width: 100%
