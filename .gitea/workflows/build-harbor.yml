@@ -10,30 +10,22 @@ jobs:
     runs-on: linux_amd64
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-
-      - name: Install dependencies
+      - name: Tests, lint (0 errors, 0 warnings) and client build in node:24-alpine
         run: |
-          corepack enable
-          yarn install --frozen-lockfile
-          cd client && yarn install --frozen-lockfile
-
-      - name: Server and utility tests
-        run: yarn test
-
-      - name: Lint server, tests and client (0 errors, 0 warnings)
-        run: yarn lint
-
-      - name: Client build
-        run: yarn build
+          podman run --rm --security-opt label=disable -v "$PWD":/src:ro \
+            -e NODE_OPTIONS=--disable-warning=DEP0169 \
+            docker.io/library/node:24-alpine sh -ec '
+              apk add --no-cache python3 make g++ > /dev/null
+              cp -a /src /app && cd /app
+              yarn install --frozen-lockfile
+              (cd client && yarn install --frozen-lockfile)
+              yarn test
+              yarn lint
+              yarn build'
 
   build:
     needs: test
     runs-on: linux_amd64
-    # secrets cannot be used in step conditions, so they are checked through env
     env:
       HARBOR_REGISTRY: ${{ secrets.HARBOR_REGISTRY }}
       HARBOR_PROJECT: ${{ secrets.HARBOR_PROJECT }}
@@ -41,7 +33,6 @@ jobs:
       HARBOR_PASSWORD: ${{ secrets.HARBOR_PASSWORD }}
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
-      # optional Docker Hub organization, defaults to the user name
       DOCKERHUB_NAMESPACE: ${{ secrets.DOCKERHUB_NAMESPACE }}
       LOCAL_MANIFEST: localhost/infra-w:${{ github.sha }}
     steps:
